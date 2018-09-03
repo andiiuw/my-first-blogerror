@@ -1,0 +1,661 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Introducción · Django Girls Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="DjangoGirls">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="how_the_internet_works/" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+        
+        <li>
+            <a href="https://legacy.gitbook.com/book/djangogirls/djangogirls-tutorial" target="_blank" class="custom-link">Django Girls Tutorial</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="how_the_internet_works/">
+            
+                <a href="how_the_internet_works/">
+            
+                    
+                    ¿Cómo funciona Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="intro_to_command_line/">
+            
+                <a href="intro_to_command_line/">
+            
+                    
+                    Introducción a la línea de comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="python_installation/">
+            
+                <a href="python_installation/">
+            
+                    
+                    Instalación de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="code_editor/">
+            
+                <a href="code_editor/">
+            
+                    
+                    Editor de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="python_introduction/">
+            
+                <a href="python_introduction/">
+            
+                    
+                    Introducción a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="django/">
+            
+                <a href="django/">
+            
+                    
+                    ¿Qué es Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="django_installation/">
+            
+                <a href="django_installation/">
+            
+                    
+                    Instalación de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="django_start_project/">
+            
+                <a href="django_start_project/">
+            
+                    
+                    Comenzar un proyecto en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="django_models/">
+            
+                <a href="django_models/">
+            
+                    
+                    Modelos en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="django_admin/">
+            
+                <a href="django_admin/">
+            
+                    
+                    Administrador de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="deploy/">
+            
+                <a href="deploy/">
+            
+                    
+                    ¡Desplegar!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="django_urls/">
+            
+                <a href="django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="django_views/">
+            
+                <a href="django_views/">
+            
+                    
+                    Vistas de Django - ¡Es hora de crear!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="html/">
+            
+                <a href="html/">
+            
+                    
+                    Introducción a HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="django_orm/">
+            
+                <a href="django_orm/">
+            
+                    
+                    ORM de Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="dynamic_data_in_templates/">
+            
+                <a href="dynamic_data_in_templates/">
+            
+                    
+                    Datos dinámicos en plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="django_templates/">
+            
+                <a href="django_templates/">
+            
+                    
+                    Plantillas de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="css/">
+            
+                <a href="css/">
+            
+                    
+                    CSS - Hazlo bonito
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="template_extending/">
+            
+                <a href="template_extending/">
+            
+                    
+                    Extender plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="extend_your_application/">
+            
+                <a href="extend_your_application/">
+            
+                    
+                    Amplía tu aplicación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="django_forms/">
+            
+                <a href="django_forms/">
+            
+                    
+                    Formularios en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="whats_next/">
+            
+                <a href="whats_next/">
+            
+                    
+                    ¿Qué sigue?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Publicado con GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://store.djangogirls.org/" target="_blank">
+      
+        <img src="https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and buy a Django Girls t-shirt! ✨</p>
+      
+      
+      <a href="https://store.djangogirls.org/" class="btn" target="_blank">
+        Get a t-shirt!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Introducción</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tutorial-de-django-girls">Tutorial de Django Girls</h1>
+<p><a href="https://gitter.im/DjangoGirls/tutorial?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter"></a></p>
+<blockquote>
+<p>Este trabajo est&#xE1; bajo la licencia internacional Creative Commons Attribution-ShareAlike 4.0. Para ver una copia de esta licencia, visita el siguiente enlace <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
+</blockquote>
+<h2 id="translation">Translation</h2>
+<p>This tutorial has been translated from English into Spanish by a wonderful group of volunteers. Special thanks goes to Victoria Martinez de la Cruz, Kevin Morales, Joshua Aranda, Silvia Frias, Leticia, Andrea Gonzalez, Adrian Manjarres, Rodrigo Caicedo, Maria Chavez, Marcelo Nicolas Manso, Rosa Durante, Moises, Israel Martinez Vargas, JuanCarlos_, N0890Dy, Ivan Yivoff, Khaterine Castellano, Erick Navarro, cyncyncyn, ZeroSoul13, Erick Aguayo, Ernesto Rico-Schmidt, Miguel Lozano, osueboy, dynarro and Geraldina Garcia Alvarez.</p>
+<h2 id="introducci&#xF3;n">Introducci&#xF3;n</h2>
+<p>&#xBF;Alguna vez has sentido que el mundo est&#xE1; cada vez m&#xE1;s cercano a la tecnolog&#xED;a y de cierto modo te has quedado atr&#xE1;s? &#xBF;Alguna vez te has preguntado c&#xF3;mo crear un sitio web pero nunca has tenido la suficiente motivaci&#xF3;n para empezar? &#xBF;Has pensado alguna vez que el mundo del software es demasiado complicado para ti como para intentar hacer algo por tu cuenta?</p>
+<p>Bueno, &#xA1;tenemos buenas noticias para ti! Programar no es tan dif&#xED;cil como aparenta y queremos mostrarte cu&#xE1;n divertido puede llegar a ser.</p>
+<p>Este tutorial no te convertir&#xE1; en programador m&#xE1;gicamente. Si quieres ser buena en esto, necesitar&#xE1;s meses o incluso a&#xF1;os de aprendizaje y pr&#xE1;ctica. Pero queremos mostrarte que programar o crear sitios web no es tan complicado como parece. Intentaremos explicar peque&#xF1;as partes lo mejor que podamos, de forma que no te sientas intimidada por la tecnolog&#xED;a.</p>
+<p>&#xA1;Esperamos poder hacerte amar la tecnolog&#xED;a tanto como nosotras lo hacemos!</p>
+<h2 id="&#xBF;qu&#xE9;-aprender&#xE1;s-con-este-tutorial">&#xBF;Qu&#xE9; aprender&#xE1;s con este tutorial?</h2>
+<p>Cuando termines el tutorial, tendr&#xE1;s una aplicaci&#xF3;n web simple y funcional: tu propio blog. Te mostraremos como publicarla online, &#xA1;as&#xED; otros podr&#xE1;n ver tu trabajo!</p>
+<p>Tendr&#xE1; (m&#xE1;s o menos) &#xE9;sta apariencia:</p>
+<p><img src="images/application.png" alt="Figura 0.1"></p>
+<blockquote>
+<p>Si est&#xE1;s siguiendo este tutorial por tu cuenta y no tienes a nadie que te ayude en caso de surgir alg&#xFA;n problema, tenemos un chat para ti: <a href="https://gitter.im/DjangoGirls/tutorial?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank"><img src="https://badges.gitter.im/Join Chat.svg" alt="Gitter"></a>. &#xA1;Hemos pedido a nuestros tutores y participantes anteriores que est&#xE9;n ah&#xED; de vez en cuando para ayudar a otros con el tutorial! &#xA1;No temas dejar tus preguntas all&#xED;!</p>
+</blockquote>
+<p>Bien, <a href="how_the_internet_works/">empecemos por el principio...</a></p>
+<h2 id="sobre-nosotros-y-c&#xF3;mo-contribuir">Sobre nosotros y c&#xF3;mo contribuir</h2>
+<p>Este tutorial lo mantiene <a href="https://djangogirls.org/" target="_blank">DjangoGirls</a>. Si encuentras alg&#xFA;n error o quieres actualizar el tutorial, por favor <a href="https://github.com/DjangoGirls/tutorial/blob/master/README.md" target="_blank">sigue la gu&#xED;a de c&#xF3;mo contribuir</a>.</p>
+<h2 id="&#xBF;te-gustar&#xED;a-ayudarnos-a-traducir-el-tutorial-a-otros-idiomas">&#xBF;Te gustar&#xED;a ayudarnos a traducir el tutorial a otros idiomas?</h2>
+<p>Actualmente, las traducciones se llevan a cabo sobre la plataforma crowdin.com en:</p>
+<p><a href="https://crowdin.com/project/django-girls-tutorial" target="_blank">https://crowdin.com/project/django-girls-tutorial</a></p>
+<p>Si tu idioma no esta listado en crowdin, por favor <a href="https://github.com/DjangoGirls/tutorial/issues/new" target="_blank">abre un nuevo problema</a> informando el idioma as&#xED; podemos agregarlo.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="how_the_internet_works/" class="navigation navigation-next navigation-unique" aria-label="Next page: ¿Cómo funciona Internet?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introducción","level":"1.1","depth":1,"next":{"title":"¿Cómo funciona Internet?","level":"1.2","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx",""],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg","url":"https://store.djangogirls.org/","description":"💖 Support our work and buy a Django Girls t-shirt! ✨","btnText":"Get a t-shirt!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"DjangoGirls/tutorial","theme":"default","author":"DjangoGirls","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"django_version":"2.0.6"},"title":"Django Girls Tutorial","language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial","Django Girls Tutorial":"https://legacy.gitbook.com/book/djangogirls/djangogirls-tutorial"},"gitbook":true},"gitbook":"*","description":"This book is a Django tutorial created for DjangoGirls event."},"file":{"path":"README.md","mtime":"2018-08-20T14:21:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-20T14:32:30.879Z"},"basePath":".","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    
+<div><script style="display: none;" type="application/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57505611-7', 'auto', {name: 'microcdn'});
+  ga('microcdn.send', 'pageview');
+
+  var _cdn_prev_loc = window.location.pathname;
+  window.setInterval(function () {
+    if (window.location.pathname !== _cdn_prev_loc) {
+      _cdn_prev_loc = window.location.pathname;
+      ga('microcdn.send', 'pageview');
+    }
+  }, 100);
+
+</script></div>
+</body>
+</html>
+
+}�a�1�      [z�<[z�I?h£       %    :https://tutorial.djangogirls.org/es/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET request-Accept-Encoding gzip, deflate, br response-head HTTP/2.0 200 OK
+age: 82
+content-encoding: identity
+content-type: text/html; charset=UTF-8
+etag: W/"d941c0e7ccbf1796bc16ce053b08ae1c"
+last-modified: Mon, 20 Aug 2018 16:27:23 GMT
+vary: Accept-Encoding
+x-cache: HIT
+x-cdn-cache-group: djangogirls/djangogirls-tutorial
+date: Mon, 20 Aug 2018 16:28:45 GMT
+X-Firefox-Spdy: h2
+ original-response-headers age: 82
+content-encoding: identity
+content-type: text/html; charset=UTF-8
+etag: W/"d941c0e7ccbf1796bc16ce053b08ae1c"
+last-modified: Mon, 20 Aug 2018 16:27:23 GMT
+vary: Accept-Encoding
+x-cache: HIT
+x-cdn-cache-group: djangogirls/djangogirls-tutorial
+date: Mon, 20 Aug 2018 16:28:45 GMT
+X-Firefox-Spdy: h2
+ predictor::resource-count 33 predictor::https://tutorial.djangogirls.org/gitbook/style.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-richquotes/plugin.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-language-picker/plugin.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-codeblock-label/block.css 1,1,1534782524,4096 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sectionx/sectionx.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-highlight/website.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-search/search.css 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-fontsettings/website.css 1,1,1534782524,4096 predictor::https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg 1,1,1534782524,4097 predictor::https://badges.gitter.im/Join%20Chat.svg 1,1,1534782524,4097 predictor::https://tutorial.djangogirls.org/es/images/application.png 1,1,1534782524,4096 net-response-time-onstart 832 net-response-time-onstop 1094 predictor::https://tutorial.djangogirls.org/gitbook/gitbook.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/theme.js 1,1,1534782524,4096 predictor::https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-heading-anchors/anchor-style.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-ga/plugin.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-github/plugin.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-language-picker/plugin.js 1,1,1534782524,4096 predictor::https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sectionx/sectionx.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-search/search-engine.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-search/search.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-lunr/lunr.min.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-lunr/search-lunr.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-sharing/buttons.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/gitbook-plugin-fontsettings/fontsettings.js 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/gitbook/fonts/fontawesome/fontawesome-webfont.woff2?v=4.6.3 1,1,1534782524,4096 predictor::https://www.google-analytics.com/analytics.js 1,1,1534782524,4096 predictor::https://www.google-analytics.com/r/collect?v=1&_v=j68&a=812435947&t=pageview&_s=1&dl=https%3A%2F%2Ftutorial.djangogirls.org%2Fes%2F&ul=en-us&de=UTF-8&dt=Introducci%C3%B3n%20%C2%B7%20Django%20Girls%20Tutorial&sd=24-bit&sr=1272x691&vp=1205x487&je=0&_u=IEBAAEAB~&jid=544642494&gjid=2086435208&cid=1940960081.1534782529&tid=UA-57505611-7&_gid=343167892.1534782529&_r=1&z=1694721147 1,1,1534782524,4096 predictor::https://www.google-analytics.com/r/collect?v=1&_v=j68&a=812435947&t=pageview&_s=1&dl=https%3A%2F%2Ftutorial.djangogirls.org%2Fes%2F&dp=%2Fes%2F&ul=en-us&de=UTF-8&dt=Introducci%C3%B3n%20%C2%B7%20Django%20Girls%20Tutorial&sd=24-bit&sr=1272x691&vp=1205x487&je=0&_u=IEDAAEAB~&jid=2107695143&gjid=891752314&cid=1940960081.1534782529&tid=UA-51680040-3&_gid=343167892.1534782529&_r=1&z=441256271 1,1,1534782524,4096 predictor::https://tutorial.djangogirls.org/es/images/it_worked2.png 1,1,1534782524,4096   T�

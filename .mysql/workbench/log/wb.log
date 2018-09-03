@@ -1,0 +1,38 @@
+14:50:54 [INF][      WBContext]: Parsing application arguments.
+14:50:54 [INF][      WBContext]:     /usr/lib/mysql-workbench/mysql-workbench-bin
+14:50:55 [INF][   WBContext UI]: Initializing workbench context UI with these values:
+	base dir: /usr/share/mysql-workbench
+	plugin path: /usr/lib/mysql-workbench/plugins
+	struct path: /usr/share/mysql-workbench/grt
+	module path: /usr/lib/mysql-workbench/modules
+	library path: /usr/share/mysql-workbench/libraries
+	user data dir: /home/andiiuw/.mysql/workbench
+	open at start: 
+	open type: 
+	run at startup: 
+	run type: 
+	Force SW rendering: No
+	Force OpenGL: No
+	quit when done: No
+14:50:55 [INF][      WBContext]: WbContext::init
+14:50:58 [INF][            WBA]: Looking for extension modules for WBA...
+14:50:58 [INF][            WBA]: 0 extension modules found
+14:50:58 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:21: link 'com.mysql.rdbms.mysql.datatype.timestamp' <object db.SimpleDatatype> key=simpleType could not be resolved
+14:50:58 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:106: link 'com.mysql.rdbms.mysql.datatype.varchar' <object db.SimpleDatatype> key=simpleType could not be resolved
+14:50:58 [WRN][            grt]: /usr/share/mysql-workbench/data/table_templates.xml:229: link 'com.mysql.rdbms.mysql.datatype.int' <object db.SimpleDatatype> key=simpleType could not be resolved
+14:50:59 [WRN][            grt]: /home/andiiuw/.mysql/workbench/server_instances.xml:23: link '597dac25-9c34-11e8-920a-080027399da9' <object GrtObject> key=owner could not be resolved
+14:50:59 [INF][      WBContext]: System info:
+ 	MySQL Workbench Community (GPL) for Linux/Unix version 6.3.8 CE build 1228 (64 bit)
+	Configuration Directory: /home/andiiuw/.mysql/workbench
+	Data Directory: /usr/share/mysql-workbench
+	Cairo Version: 1.15.10
+	OS: Linux 4.15.0-20-generic
+	CPU: Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz (2494.316MHz) - 1.95GiB RAM
+	Distribution: Ubuntu 18.04 LTS
+
+	Fips mode enabled: no
+
+14:51:04 [ERR][  GRTDispatcher]: exception in grt execute_task, continuing: Exception: Access denied for user 'root'@'localhost' (using password: NO)
+14:51:04 [ERR][  GRTDispatcher]: worker: task 'execute sql queries' has failed with error:.Access denied for user 'root'@'localhost' (using password: NO)
+14:51:08 [INF][      SqlEditor]: Opened connection 'Local instance 3306' to (Ubuntu) version 5.7.23-0ubuntu0.18.04.1
+14:51:09 [INF][     AutoCCache]: Initializing autocompletion cache for Local_instance_3306

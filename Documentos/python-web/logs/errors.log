@@ -1,0 +1,236 @@
+[Mon Jul 30 10:51:46.888661 2018] [authz_core:error] [pid 4679:tid 140144136922880] [client 127.0.0.1:38162] AH01630: client denied by server configuration: /home/fredy/Escritorio/python-web/mypythonapp/controller.py, referer: http://librosweb.es/libro/python/capitulo_13/python_bajo_apache.html
+[Mon Jul 30 10:52:03.811042 2018] [authz_core:error] [pid 4812:tid 140144136922880] [client 127.0.0.1:38164] AH01630: client denied by server configuration: /home/fredy/Escritorio/python-web/mypythonapp/controller.py, referer: http://librosweb.es/libro/python/capitulo_13/python_bajo_apache.html
+[Mon Jul 30 10:52:04.952591 2018] [authz_core:error] [pid 4812:tid 140144128530176] [client 127.0.0.1:38164] AH01630: client denied by server configuration: /home/fredy/Escritorio/python-web/mypythonapp/controller.py, referer: http://librosweb.es/libro/python/capitulo_13/python_bajo_apache.html
+[Mon Jul 30 10:53:25.095836 2018] [authz_core:error] [pid 4812:tid 140144111744768] [client 127.0.0.1:38166] AH01630: client denied by server configuration: /home/fredy/Escritorio/python-web/mypythonapp/controller.py, referer: http://librosweb.es/libro/python/capitulo_13/python_bajo_apache.html
+[Mon Jul 30 10:56:54.520327 2018] [wsgi:error] [pid 4917:tid 140144136922880] [client 127.0.0.1:38170] mod_wsgi (pid=4917): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'., referer: http://librosweb.es/libro/python/capitulo_13/python_bajo_apache.html
+[Mon Jul 30 10:57:28.283337 2018] [wsgi:error] [pid 4916:tid 140144111744768] [client 127.0.0.1:38172] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Jul 30 11:02:13.962610 2018] [wsgi:error] [pid 4916:tid 140144120137472] [client 127.0.0.1:38182] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Jul 30 11:02:43.016403 2018] [wsgi:error] [pid 4916:tid 140144036210432] [client 127.0.0.1:38184] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Jul 30 11:08:30.753040 2018] [wsgi:error] [pid 4916:tid 140144061388544] [client 127.0.0.1:38190] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Jul 30 11:08:33.241072 2018] [wsgi:error] [pid 4916:tid 140144069781248] [client 127.0.0.1:38190] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Jul 30 11:08:35.323119 2018] [wsgi:error] [pid 4916:tid 140144094959360] [client 127.0.0.1:38190] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Jul 30 11:08:57.193969 2018] [wsgi:error] [pid 4916:tid 140144027817728] [client 127.0.0.1:38192] mod_wsgi (pid=4916): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' does not contain WSGI application 'application'.
+[Mon Aug 06 10:29:27.981044 2018] [wsgi:error] [pid 858:tid 140385628186368] [client 127.0.0.1:58652] mod_wsgi (pid=858): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:29:27.990329 2018] [wsgi:error] [pid 858:tid 140385628186368] [client 127.0.0.1:58652] mod_wsgi (pid=858): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:29:27.990398 2018] [wsgi:error] [pid 858:tid 140385628186368] [client 127.0.0.1:58652] Traceback (most recent call last):
+[Mon Aug 06 10:29:27.990443 2018] [wsgi:error] [pid 858:tid 140385628186368] [client 127.0.0.1:58652]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:29:27.990585 2018] [wsgi:error] [pid 858:tid 140385628186368] [client 127.0.0.1:58652]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:29:27.990645 2018] [wsgi:error] [pid 858:tid 140385628186368] [client 127.0.0.1:58652] ImportError: No module named sitioweb
+[Mon Aug 06 10:29:28.226250 2018] [wsgi:error] [pid 858:tid 140385619793664] [client 127.0.0.1:58656] mod_wsgi (pid=858): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:29:28.226309 2018] [wsgi:error] [pid 858:tid 140385619793664] [client 127.0.0.1:58656] mod_wsgi (pid=858): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:29:28.226346 2018] [wsgi:error] [pid 858:tid 140385619793664] [client 127.0.0.1:58656] Traceback (most recent call last):
+[Mon Aug 06 10:29:28.226385 2018] [wsgi:error] [pid 858:tid 140385619793664] [client 127.0.0.1:58656]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:29:28.226441 2018] [wsgi:error] [pid 858:tid 140385619793664] [client 127.0.0.1:58656]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:29:28.226476 2018] [wsgi:error] [pid 858:tid 140385619793664] [client 127.0.0.1:58656] ImportError: No module named sitioweb
+[Mon Aug 06 10:29:28.256740 2018] [wsgi:error] [pid 859:tid 140385739876096] [client 127.0.0.1:58654] mod_wsgi (pid=859): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:29:28.256808 2018] [wsgi:error] [pid 859:tid 140385739876096] [client 127.0.0.1:58654] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:29:28.256831 2018] [wsgi:error] [pid 859:tid 140385739876096] [client 127.0.0.1:58654] Traceback (most recent call last):
+[Mon Aug 06 10:29:28.256856 2018] [wsgi:error] [pid 859:tid 140385739876096] [client 127.0.0.1:58654]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:29:28.256933 2018] [wsgi:error] [pid 859:tid 140385739876096] [client 127.0.0.1:58654]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:29:28.256987 2018] [wsgi:error] [pid 859:tid 140385739876096] [client 127.0.0.1:58654] ImportError: No module named sitioweb
+[Mon Aug 06 10:34:20.252478 2018] [wsgi:error] [pid 859:tid 140385544259328] [client 127.0.0.1:58668] mod_wsgi (pid=859): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:34:20.252528 2018] [wsgi:error] [pid 859:tid 140385544259328] [client 127.0.0.1:58668] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:34:20.252568 2018] [wsgi:error] [pid 859:tid 140385544259328] [client 127.0.0.1:58668] Traceback (most recent call last):
+[Mon Aug 06 10:34:20.252606 2018] [wsgi:error] [pid 859:tid 140385544259328] [client 127.0.0.1:58668]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:34:20.252738 2018] [wsgi:error] [pid 859:tid 140385544259328] [client 127.0.0.1:58668]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:34:20.252775 2018] [wsgi:error] [pid 859:tid 140385544259328] [client 127.0.0.1:58668] ImportError: No module named sitioweb
+[Mon Aug 06 10:35:14.553047 2018] [wsgi:error] [pid 859:tid 140385527473920] [client 127.0.0.1:58678] mod_wsgi (pid=859): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:35:14.553110 2018] [wsgi:error] [pid 859:tid 140385527473920] [client 127.0.0.1:58678] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:35:14.553149 2018] [wsgi:error] [pid 859:tid 140385527473920] [client 127.0.0.1:58678] Traceback (most recent call last):
+[Mon Aug 06 10:35:14.553202 2018] [wsgi:error] [pid 859:tid 140385527473920] [client 127.0.0.1:58678]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:35:14.553259 2018] [wsgi:error] [pid 859:tid 140385527473920] [client 127.0.0.1:58678]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:35:14.553296 2018] [wsgi:error] [pid 859:tid 140385527473920] [client 127.0.0.1:58678] ImportError: No module named sitioweb
+[Mon Aug 06 10:38:03.640440 2018] [wsgi:error] [pid 859:tid 140385636579072] [client 127.0.0.1:58682] mod_wsgi (pid=859): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:38:03.640703 2018] [wsgi:error] [pid 859:tid 140385636579072] [client 127.0.0.1:58682] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:38:03.640755 2018] [wsgi:error] [pid 859:tid 140385636579072] [client 127.0.0.1:58682] Traceback (most recent call last):
+[Mon Aug 06 10:38:03.640800 2018] [wsgi:error] [pid 859:tid 140385636579072] [client 127.0.0.1:58682]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:38:03.640862 2018] [wsgi:error] [pid 859:tid 140385636579072] [client 127.0.0.1:58682]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:38:03.640901 2018] [wsgi:error] [pid 859:tid 140385636579072] [client 127.0.0.1:58682] ImportError: No module named sitioweb
+[Mon Aug 06 10:39:45.889255 2018] [wsgi:error] [pid 859:tid 140385619793664] [client 127.0.0.1:58684] mod_wsgi (pid=859): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:39:45.889461 2018] [wsgi:error] [pid 859:tid 140385619793664] [client 127.0.0.1:58684] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:39:45.889606 2018] [wsgi:error] [pid 859:tid 140385619793664] [client 127.0.0.1:58684] Traceback (most recent call last):
+[Mon Aug 06 10:39:45.889653 2018] [wsgi:error] [pid 859:tid 140385619793664] [client 127.0.0.1:58684]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:39:45.889715 2018] [wsgi:error] [pid 859:tid 140385619793664] [client 127.0.0.1:58684]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:39:45.889754 2018] [wsgi:error] [pid 859:tid 140385619793664] [client 127.0.0.1:58684] ImportError: No module named sitioweb
+[Mon Aug 06 10:39:51.571873 2018] [wsgi:error] [pid 859:tid 140385569437440] [client 127.0.0.1:58686] mod_wsgi (pid=859): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Mon Aug 06 10:39:51.572096 2018] [wsgi:error] [pid 859:tid 140385569437440] [client 127.0.0.1:58686] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:39:51.572144 2018] [wsgi:error] [pid 859:tid 140385569437440] [client 127.0.0.1:58686] Traceback (most recent call last):
+[Mon Aug 06 10:39:51.572187 2018] [wsgi:error] [pid 859:tid 140385569437440] [client 127.0.0.1:58686]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Mon Aug 06 10:39:51.572247 2018] [wsgi:error] [pid 859:tid 140385569437440] [client 127.0.0.1:58686]     from sitioweb import contacto, ejemplos
+[Mon Aug 06 10:39:51.572286 2018] [wsgi:error] [pid 859:tid 140385569437440] [client 127.0.0.1:58686] ImportError: No module named sitioweb
+[Mon Aug 06 10:55:15.059995 2018] [wsgi:error] [pid 859:tid 140385577830144] [client 127.0.0.1:58732] mod_wsgi (pid=859): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Mon Aug 06 10:55:15.060274 2018] [wsgi:error] [pid 859:tid 140385577830144] [client 127.0.0.1:58732] Traceback (most recent call last):
+[Mon Aug 06 10:55:15.060339 2018] [wsgi:error] [pid 859:tid 140385577830144] [client 127.0.0.1:58732]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 19, in application
+[Mon Aug 06 10:55:15.060480 2018] [wsgi:error] [pid 859:tid 140385577830144] [client 127.0.0.1:58732]     output = formulario.envia()
+[Mon Aug 06 10:55:15.060521 2018] [wsgi:error] [pid 859:tid 140385577830144] [client 127.0.0.1:58732] NameError: global name 'formulario' is not defined
+[Sat Aug 11 22:30:54.742438 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134] mod_wsgi (pid=904): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 22:30:54.758661 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134] mod_wsgi (pid=904): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 22:30:54.758708 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134] Traceback (most recent call last):
+[Sat Aug 11 22:30:54.758736 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 22:30:54.758853 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 22:30:54.758871 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 4, in <module>
+[Sat Aug 11 22:30:54.758935 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134]     from urllib.request import urlopen
+[Sat Aug 11 22:30:54.758960 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38134] ImportError: No module named request
+[Sat Aug 11 22:30:55.151852 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144] mod_wsgi (pid=905): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 22:30:55.151894 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144] mod_wsgi (pid=905): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 22:30:55.151918 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144] Traceback (most recent call last):
+[Sat Aug 11 22:30:55.151942 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 22:30:55.152031 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 22:30:55.152048 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 4, in <module>
+[Sat Aug 11 22:30:55.152129 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144]     from urllib.request import urlopen
+[Sat Aug 11 22:30:55.152153 2018] [wsgi:error] [pid 905:tid 139884434011904] [client 127.0.0.1:38144] ImportError: No module named request
+[Sat Aug 11 22:31:07.380760 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150] mod_wsgi (pid=904): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 22:31:07.380853 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150] mod_wsgi (pid=904): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 22:31:07.380879 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150] Traceback (most recent call last):
+[Sat Aug 11 22:31:07.380905 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 22:31:07.380955 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 22:31:07.380971 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 4, in <module>
+[Sat Aug 11 22:31:07.380996 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150]     from urllib.request import urlopen
+[Sat Aug 11 22:31:07.381019 2018] [wsgi:error] [pid 904:tid 139884442404608] [client 127.0.0.1:38150] ImportError: No module named request
+[Sat Aug 11 22:31:12.474620 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152] mod_wsgi (pid=905): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 22:31:12.474661 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152] mod_wsgi (pid=905): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 22:31:12.474686 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152] Traceback (most recent call last):
+[Sat Aug 11 22:31:12.474710 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 22:31:12.474748 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 22:31:12.474764 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 4, in <module>
+[Sat Aug 11 22:31:12.474789 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152]     from urllib.request import urlopen
+[Sat Aug 11 22:31:12.474812 2018] [wsgi:error] [pid 905:tid 139884425619200] [client 127.0.0.1:38152] ImportError: No module named request
+[Sat Aug 11 22:32:47.957645 2018] [wsgi:error] [pid 905:tid 139884392048384] [client 127.0.0.1:38158] ()
+[Sat Aug 11 22:33:36.651192 2018] [wsgi:error] [pid 904:tid 139884375262976] [client 127.0.0.1:38160] ()
+[Sat Aug 11 22:33:39.122225 2018] [wsgi:error] [pid 904:tid 139884417226496] [client 127.0.0.1:38160] ()
+[Sat Aug 11 22:33:43.674703 2018] [wsgi:error] [pid 904:tid 139884408833792] [client 127.0.0.1:38160] ()
+[Sat Aug 11 22:33:50.295223 2018] [wsgi:error] [pid 904:tid 139884383655680] [client 127.0.0.1:38160] ()
+[Sat Aug 11 22:34:32.926819 2018] [wsgi:error] [pid 905:tid 139884408833792] [client 127.0.0.1:38162] ()
+[Sat Aug 11 22:35:16.489380 2018] [wsgi:error] [pid 904:tid 139884467582720] [client 127.0.0.1:38164] ()
+[Sat Aug 11 22:35:17.672229 2018] [wsgi:error] [pid 904:tid 139884459190016] [client 127.0.0.1:38164] ()
+[Sat Aug 11 22:35:29.273184 2018] [wsgi:error] [pid 904:tid 139884434011904] [client 127.0.0.1:38166] ()
+[Sat Aug 11 22:36:42.860900 2018] [wsgi:error] [pid 904:tid 139884333299456] [client 127.0.0.1:38172] ()
+[Sat Aug 11 22:38:35.508718 2018] [wsgi:error] [pid 904:tid 139884316514048] [client 127.0.0.1:38176] ()
+[Sat Aug 11 22:38:37.769805 2018] [wsgi:error] [pid 904:tid 139884308121344] [client 127.0.0.1:38176] ()
+[Sat Aug 11 22:38:58.409744 2018] [wsgi:error] [pid 904:tid 139884291335936] [client 127.0.0.1:38178] ()
+[Sat Aug 11 22:39:23.404356 2018] [wsgi:error] [pid 904:tid 139884350084864] [client 127.0.0.1:38182] ()
+[Sat Aug 11 22:39:47.821712 2018] [wsgi:error] [pid 905:tid 139884366870272] [client 127.0.0.1:38184] ()
+[Sat Aug 11 22:39:48.798811 2018] [wsgi:error] [pid 905:tid 139884358477568] [client 127.0.0.1:38184] ()
+[Sat Aug 11 22:40:54.276099 2018] [wsgi:error] [pid 904:tid 139884425619200] [client 127.0.0.1:38186] ()
+[Sat Aug 11 22:42:27.222654 2018] [wsgi:error] [pid 904:tid 139884375262976] [client 127.0.0.1:38190] ()
+[Sat Aug 11 22:42:28.171297 2018] [wsgi:error] [pid 904:tid 139884417226496] [client 127.0.0.1:38190] ()
+[Sat Aug 11 22:42:45.986363 2018] [wsgi:error] [pid 904:tid 139884392048384] [client 127.0.0.1:38192] ()
+[Sat Aug 11 22:42:47.169143 2018] [wsgi:error] [pid 904:tid 139884383655680] [client 127.0.0.1:38192] ()
+[Sat Aug 11 22:42:48.067064 2018] [wsgi:error] [pid 904:tid 139884358477568] [client 127.0.0.1:38192] ()
+[Sat Aug 11 22:43:07.473249 2018] [wsgi:error] [pid 904:tid 139884434011904] [client 127.0.0.1:38212] ()
+[Sat Aug 11 22:43:09.335888 2018] [wsgi:error] [pid 904:tid 139884366870272] [client 127.0.0.1:38212] ()
+[Sat Aug 11 22:43:10.511674 2018] [wsgi:error] [pid 904:tid 139884341692160] [client 127.0.0.1:38212] ()
+[Sat Aug 11 22:51:35.441654 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390] mod_wsgi (pid=2742): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 22:51:35.470565 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390] Traceback (most recent call last):
+[Sat Aug 11 22:51:35.470611 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 21, in application
+[Sat Aug 11 22:51:35.470981 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390]     output = formulario.recibe(environ)
+[Sat Aug 11 22:51:35.471003 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 46, in recibe
+[Sat Aug 11 22:51:35.471071 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390]     tabla += "<tr> \\
+[Sat Aug 11 22:51:35.471099 2018] [wsgi:error] [pid 2742:tid 140375790921472] [client 127.0.0.1:38390] UnboundLocalError: local variable 'tabla' referenced before assignment
+[Sat Aug 11 22:51:41.336803 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392] mod_wsgi (pid=2743): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'., referer: http://python-web/formulario
+[Sat Aug 11 22:51:41.338466 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392] Traceback (most recent call last):, referer: http://python-web/formulario
+[Sat Aug 11 22:51:41.338591 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 21, in application, referer: http://python-web/formulario
+[Sat Aug 11 22:51:41.338963 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392]     output = formulario.recibe(environ), referer: http://python-web/formulario
+[Sat Aug 11 22:51:41.338992 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 46, in recibe, referer: http://python-web/formulario
+[Sat Aug 11 22:51:41.339061 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392]     tabla += "<tr> \\, referer: http://python-web/formulario
+[Sat Aug 11 22:51:41.339089 2018] [wsgi:error] [pid 2743:tid 140375790921472] [client 127.0.0.1:38392] UnboundLocalError: local variable 'tabla' referenced before assignment, referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351389 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394] mod_wsgi (pid=2742): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'., referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351450 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394] Traceback (most recent call last):, referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351484 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 21, in application, referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351523 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394]     output = formulario.recibe(environ), referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351550 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 46, in recibe, referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351578 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394]     tabla += "<tr> \\, referer: http://python-web/formulario
+[Sat Aug 11 22:51:54.351604 2018] [wsgi:error] [pid 2742:tid 140375807706880] [client 127.0.0.1:38394] UnboundLocalError: local variable 'tabla' referenced before assignment, referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.605901 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446] mod_wsgi (pid=3214): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'., referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.610816 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446] Traceback (most recent call last):, referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.610989 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 21, in application, referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.611417 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446]     output = formulario.recibe(environ), referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.611454 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 42, in recibe, referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.611527 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446]     texto ="<p> Valor:" +parametros + "</p>", referer: http://python-web/formulario
+[Sat Aug 11 23:19:10.611556 2018] [wsgi:error] [pid 3214:tid 139703939110656] [client 127.0.0.1:38446] TypeError: cannot concatenate 'str' and 'dict' objects, referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.965823 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448] mod_wsgi (pid=3299): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'., referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.970499 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448] Traceback (most recent call last):, referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.970766 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 21, in application, referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.971182 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448]     output = formulario.recibe(environ), referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.971219 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 42, in recibe, referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.971338 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448]     texto ="<p> Valor:" +parametros + "</p>", referer: http://python-web/formulario
+[Sat Aug 11 23:19:15.971412 2018] [wsgi:error] [pid 3299:tid 139728607229696] [client 127.0.0.1:38448] TypeError: cannot concatenate 'str' and 'dict' objects, referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.543255 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454] mod_wsgi (pid=3462): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'., referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.543411 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454] Traceback (most recent call last):, referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.543500 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 21, in application, referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.543835 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454]     output = formulario.recibe(environ), referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.545680 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 42, in recibe, referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.545810 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454]     texto ="<p> Valor:" +parametros['QUERY_STRING','no'] + "</p>", referer: http://python-web/formulario
+[Sat Aug 11 23:23:50.545849 2018] [wsgi:error] [pid 3462:tid 139736417036032] [client 127.0.0.1:38454] KeyError: ('QUERY_STRING', 'no'), referer: http://python-web/formulario
+[Sat Aug 11 23:34:05.021459 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482] mod_wsgi (pid=3998): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 23:34:05.021642 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482] mod_wsgi (pid=3998): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 23:34:05.021716 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482] Traceback (most recent call last):
+[Sat Aug 11 23:34:05.021847 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 23:34:05.021942 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 23:34:05.022020 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 53
+[Sat Aug 11 23:34:05.022035 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]     texto += "<tr> \\
+[Sat Aug 11 23:34:05.022045 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]                         <td>"+ str(x)  + "</td>\\
+[Sat Aug 11 23:34:05.022056 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]                     
+[Sat Aug 11 23:34:05.022066 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482]                                                ^
+[Sat Aug 11 23:34:05.022077 2018] [wsgi:error] [pid 3998:tid 139955087460096] [client 127.0.0.1:38482] SyntaxError: EOL while scanning string literal
+[Sat Aug 11 23:34:44.702264 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484] mod_wsgi (pid=4070): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 23:34:44.706687 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484] mod_wsgi (pid=4070): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 23:34:44.706878 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484] Traceback (most recent call last):
+[Sat Aug 11 23:34:44.706941 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 23:34:44.707076 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 23:34:44.707190 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 53
+[Sat Aug 11 23:34:44.707206 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]     texto += "<tr> \\
+[Sat Aug 11 23:34:44.707227 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]                         <td>"+ str(x)  + "</td>\\
+[Sat Aug 11 23:34:44.707252 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]                     
+[Sat Aug 11 23:34:44.707260 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484]                                                ^
+[Sat Aug 11 23:34:44.707271 2018] [wsgi:error] [pid 4070:tid 140327109256960] [client 127.0.0.1:38484] SyntaxError: EOL while scanning string literal
+[Sat Aug 11 23:34:46.290484 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486] mod_wsgi (pid=4071): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 23:34:46.291144 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486] mod_wsgi (pid=4071): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 23:34:46.291219 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486] Traceback (most recent call last):
+[Sat Aug 11 23:34:46.291255 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 23:34:46.291341 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 23:34:46.291415 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 53
+[Sat Aug 11 23:34:46.291429 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]     texto += "<tr> \\
+[Sat Aug 11 23:34:46.291438 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]                         <td>"+ str(x)  + "</td>\\
+[Sat Aug 11 23:34:46.291449 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]                     
+[Sat Aug 11 23:34:46.291457 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486]                                                ^
+[Sat Aug 11 23:34:46.291468 2018] [wsgi:error] [pid 4071:tid 140327218841344] [client 127.0.0.1:38486] SyntaxError: EOL while scanning string literal
+[Sat Aug 11 23:35:43.386366 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490] mod_wsgi (pid=4216): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 23:35:43.394419 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490] mod_wsgi (pid=4216): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 23:35:43.394569 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490] Traceback (most recent call last):
+[Sat Aug 11 23:35:43.394634 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 23:35:43.394756 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 23:35:43.394855 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 53
+[Sat Aug 11 23:35:43.394870 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]     texto += "<tr> \\
+[Sat Aug 11 23:35:43.394880 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]                         <td>"+ str(x)  + "</td>\\
+[Sat Aug 11 23:35:43.394889 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]                         <td>"+  ENCONTRADO:  + "</td>\\
+[Sat Aug 11 23:35:43.394910 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]                     
+[Sat Aug 11 23:35:43.394919 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]                                                 
+[Sat Aug 11 23:35:43.394927 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490]                                           ^
+[Sat Aug 11 23:35:43.394937 2018] [wsgi:error] [pid 4216:tid 139764451755776] [client 127.0.0.1:38490] SyntaxError: invalid syntax
+[Sat Aug 11 23:35:45.993502 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492] mod_wsgi (pid=4217): Target WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py' cannot be loaded as Python module.
+[Sat Aug 11 23:35:45.993732 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492] mod_wsgi (pid=4217): Exception occurred processing WSGI script '/home/fredy/Escritorio/python-web/mypythonapp/controller.py'.
+[Sat Aug 11 23:35:45.993821 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492] Traceback (most recent call last):
+[Sat Aug 11 23:35:45.993876 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]   File "/home/fredy/Escritorio/python-web/mypythonapp/controller.py", line 6, in <module>
+[Sat Aug 11 23:35:45.993964 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]     from sitioweb import contacto, ejemplos, formulario
+[Sat Aug 11 23:35:45.994054 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]   File "home/fredy/Escritorio/python-web/mypythonapp/sitioweb/formulario.py", line 53
+[Sat Aug 11 23:35:45.994069 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]     texto += "<tr> \\
+[Sat Aug 11 23:35:45.994078 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]                         <td>"+ str(x)  + "</td>\\
+[Sat Aug 11 23:35:45.994087 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]                         <td>"+  ENCONTRADO:  + "</td>\\
+[Sat Aug 11 23:35:45.994097 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]                     
+[Sat Aug 11 23:35:45.994105 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]                                                 
+[Sat Aug 11 23:35:45.994114 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492]                                           ^
+[Sat Aug 11 23:35:45.994124 2018] [wsgi:error] [pid 4217:tid 139764443363072] [client 127.0.0.1:38492] SyntaxError: invalid syntax
+[Tue Aug 14 15:27:55.236848 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090] mod_wsgi (pid=23136): Exception occurred processing WSGI script '/home/andiiuw/Documentos/python-web/mypythonapp/controller.py'., referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252101 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090] Traceback (most recent call last):, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252166 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]   File "/home/andiiuw/Documentos/python-web/mypythonapp/controller.py", line 21, in application, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252270 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]     output = formulario.recibe(environ), referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252286 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]   File "/home/andiiuw/Documentos/python-web/mypythonapp/sitioweb/formulario.py", line 46, in recibe, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252338 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]     result = run_query(query), referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252353 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]   File "/home/andiiuw/Documentos/python-web/mypythonapp/sitioweb/formulario.py", line 14, in run_query, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252389 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]     cursor.execute(query)          # Ejecutar una consulta, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.252403 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]   File "/usr/lib/python2.7/dist-packages/MySQLdb/cursors.py", line 250, in execute, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.264253 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]     self.errorhandler(self, exc, value), referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.264302 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]   File "/usr/lib/python2.7/dist-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.272360 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090]     raise errorvalue, referer: http://python-web/formulario
+[Tue Aug 14 15:27:55.272427 2018] [wsgi:error] [pid 23136:tid 139934321075968] [client 127.0.0.1:48090] ProgrammingError: (1146, "Table 'db1.links' doesn't exist"), referer: http://python-web/formulario

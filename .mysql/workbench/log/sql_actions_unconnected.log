@@ -1,0 +1,112 @@
+[1, 19:31:05] Apply changes to bd1: Preparing...
+[1, 19:31:14] Applying changes to bd1...: 
+[1, 19:31:14] : Changes applied to bd1
+[1, 19:31:18] Apply changes to bd1: Changes applied
+[2, 19:32:22] Apply changes to tabla1: Preparing...
+[2, 19:32:24] Applying changes to tabla1...: 
+[2, 19:32:25] : Changes applied to tabla1
+[2, 19:32:28] Apply changes to tabla1: Changes applied
+[3, 19:33:10] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[3, 19:33:11] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[3, 19:33:11] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 0 row(s) returned
+[4, 19:56:52] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[4, 19:56:52] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[4, 19:56:52] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 387 row(s) returned
+[5, 20:07:24] delete from tabla1: Running...
+[5, 20:07:24] delete from tabla1: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[6, 20:07:28] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[6, 20:07:28] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[6, 20:07:28] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 691 row(s) returned
+[7, 20:07:41] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[7, 20:07:41] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[7, 20:07:41] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 691 row(s) returned
+[8, 20:07:58] delete * FROM bd1.tabla1: Running...
+[8, 20:07:58] delete * FROM bd1.tabla1: Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM bd1.tabla1' at line 1
+[9, 20:08:18] delete  FROM bd1.tabla1: Running...
+[9, 20:08:18] delete  FROM bd1.tabla1: Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column
+To disable safe mode, toggle the option in Preferences -> SQL Editor and reconnect.
+[10, 20:08:40] DROP TABLE `bd1`.`tabla1`: Running...
+[10, 20:08:41] DROP TABLE `bd1`.`tabla1`: 0 row(s) affected
+[11, 20:09:26] Apply changes to tabla1: Preparing...
+[11, 20:09:28] Applying changes to tabla1...: 
+[11, 20:09:29] : Changes applied to tabla1
+[11, 20:09:31] Apply changes to tabla1: Changes applied
+[12, 21:45:49] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[12, 21:45:51] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[12, 21:45:51] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 0 row(s) returned
+[13, 14:45:46] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[13, 14:45:47] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[13, 14:45:47] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 0 row(s) returned
+[1, 14:53:02] SELECT descripcion
+FROM `bd1`.`tabla1`
+LIMIT 0, 1000
+: Running...
+[1, 14:53:02] SELECT descripcion
+FROM `bd1`.`tabla1`
+LIMIT 0, 1000
+: Fetching...
+[1, 14:53:02] SELECT descripcion
+FROM `bd1`.`tabla1`
+LIMIT 0, 1000
+: 0 row(s) returned
+[2, 14:53:16] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Running...
+[2, 14:53:16] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: Fetching...
+[2, 14:53:16] SELECT * FROM bd1.tabla1
+LIMIT 0, 1000
+: 0 row(s) returned
+[3, 14:58:02] Apply changes to new_table: Preparing...
+[3, 14:58:05] Apply changes to new_table: 
+[4, 14:58:12] Apply changes to links: Preparing...
+[4, 14:58:14] Applying changes to links...: 
+[4, 14:58:16] : Changes applied to links
+[4, 15:00:13] Apply changes to links: Changes applied
+[5, 15:03:57] SELECT * FROM bd1.links
+LIMIT 0, 1000
+: Running...
+[5, 15:03:57] SELECT * FROM bd1.links
+LIMIT 0, 1000
+: Fetching...
+[5, 15:03:57] SELECT * FROM bd1.links
+LIMIT 0, 1000
+: 85 row(s) returned

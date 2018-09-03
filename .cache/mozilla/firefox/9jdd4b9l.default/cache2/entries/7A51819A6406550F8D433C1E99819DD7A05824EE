@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>PHP: MySQL y acceso a una base de datos - Introducción al desarrollo web - iDESWEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aprender a administrar una base de datos con MySQL. Conocer algunas herramientas que ayudan a administrar una base de datos de MySQL. Aprender a acceder a una base de datos desde PHP. Aprender a realizar una consulta SELECT y mostrar el resultado en una página web. iDESWEB, un curso nuevo de tipo MOOC, online y totalmente gratuito, con el que vas a aprender los conceptos básicos del desarrollo de aplicaciones web." />
+	<meta name="keywords" content="servidor, XAMPP, PHP, MySQL, base, datos, curso, mooc, gratuito, gratis, online, introducción, web, World Wide Web, WWW, HTML, XHTML, HTML5, CSS, CSS3, DOM, JavaScript, JS, jQuery, XHR, JSON, XML, AJAX, CGI, PHP, MySQL, phpMyAdmin, CodeIgniter, accesibilidad, accessibility, usabilidad, usability, World Wide Web Consortium, W3C" />
+    <meta name="author" content="Sergio Luján Mora">
+
+    <!-- Le styles -->
+    <link href="http://idesweb.com/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://idesweb.com/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="http://idesweb.com/css/extrastyle.css" rel="stylesheet" />
+	
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://idesweb.com/favicon.ico" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33916249-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <h1><a class="brand" href="http://idesweb.es/">iDESWEB: Introducción al desarrollo web</a></h1>
+          
+            <ul class="nav visible-desktop">
+			  <li><a href="http://idesweb.es/apuntate">¡Apúntate!</a></li>
+			  <li><a href="http://idesweb.es/temario">Temario</a></li>
+			  <li><a href="http://idesweb.es/proyecto">Proyecto</a></li>
+			  <li><a href="http://idesweb.es/calendario">Calendario</a></li>
+			  <li><a href="http://idesweb.es/metodologia">Metodología</a></li>
+			  <li><a href="http://idesweb.es/profesores">Profesores</a></li>
+			  <!-- <li class="divider-vertical"></li> -->
+			  <li><a href="http://www.youtube.com/user/idesweb/">YouTube</a></li>
+			  <li><a href="http://idesweb.blogspot.com">Blog</a></li>
+              <li><a href="http://www.twitter.com/idesweb/">Twitter</a></li>
+            </ul>
+			
+			<ul class="nav nav-pills visible-phone visible-tablet">
+                  <li class="dropdown" id="menu-principal">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú principal <span class="hide">(repetido, lo siento)</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+			  <li><a href="http://idesweb.es/apuntate">¡Apúntate!</a></li>					
+			  <li><a href="http://idesweb.es/temario">Temario</a></li>
+			  <li><a href="http://idesweb.es/proyecto">Proyecto</a></li>
+			  <li><a href="http://idesweb.es/calendario">Calendario</a></li>
+			  <li><a href="http://idesweb.es/metodologia">Metodología</a></li>
+			  <li><a href="http://idesweb.es/profesores">Profesores</a></li>
+			  <li class="divider"></li>
+              <li><a href="http://www.youtube.com/user/idesweb/">YouTube</a></li>
+			  <li><a href="http://idesweb.blogspot.com">Blog</a></li>
+              <li><a href="http://www.twitter.com/idesweb/">Twitter</a></li>					
+                    </ul>
+                  </li>
+			</ul>
+          
+        </div>
+      </div>
+    </div><div class="container">
+<h2>Proyecto: PHP: MySQL y acceso a una base de datos</h2><div class="container"><h3>Resumen</h3><p>Aprender a administrar una base de datos con MySQL. Conocer algunas herramientas que ayudan a administrar una base de datos de MySQL. Aprender a acceder a una base de datos desde PHP. Aprender a realizar una consulta SELECT y mostrar el resultado en una página web.</p><h3>Contenido</h3> <!--
+PHP: MySQL y acceso a una base de datos 1
+-->
+
+<ol>
+<li><a href="#prac-objetivos">Objetivos</a></li>
+<li><a href="#prac-que-tengo-que-hacer">¿Qué tengo que hacer?</a></li>
+<li><a href="#prac-como-lo-hago">¿Cómo lo hago?</a></li>
+<li><a href="#prac-recomendaciones">Recomendaciones</a></li>
+<li><a href="#prac-recursos">Recursos</a></li>
+</ol>
+
+
+<hr id="prac-objetivos" />
+
+<h3>Objetivos</h3>
+
+<ul>
+<li>Aprender a administrar una base de datos con MySQL.</li>
+
+<li>Conocer algunas herramientas que ayudan a administrar una base de datos de MySQL.</li>
+
+<li>Aprender a acceder a una base de datos desde PHP.</li>
+
+<li>Aprender a realizar una consulta SELECT y mostrar el resultado en una página web.</li>
+</ul>
+
+
+<hr id="prac-que-tengo-que-hacer" />
+
+<h3>¿Qué tengo que hacer?</h3>
+
+<p>
+MySQL es el sistema gestor de bases de datos de código abierto más popular en la actualidad. MySQL 
+está disponible para distintos sistemas operativos, como Linux, Mac OS X, Solaris, Windows y otros más. 
+MySQL es muy popular en el desarrollo de aplicaciones web, ya que forma parte como sistema gestor de bases de datos de 
+las plataformas <abbr title="Linux Apache MySQL PHP">LAMP</abbr>, <abbr title="BSD Apache MySQL PHP">BAMP</abbr>,
+<abbr title="MacOS Apache MySQL PHP">MAMP</abbr> y <abbr title="Windows Apache MySQL PHP">WAMP</abbr>. 
+</p>
+
+<p>
+En esta práctica tienes que crear una base de datos en MySQL para almacenar los datos que emplea 
+el sitio web. La base de datos se tiene que llamar "pibd" y tiene que tener las siguientes tablas (se indica 
+el tipo de dato más apropiado para cada columna, pero se puede cambiar según la necesidad de cada 
+uno):
+</p> 
+
+<p><strong>Tabla Usuarios</strong></p>
+<ul>
+<li>
+<strong>IdUsuario</strong> : entero, autoincremento y clave primaria. 
+</li>
+
+<li>
+<strong>NomUsuario</strong> : texto (longitud máxima 15 caracteres) y valor único. 
+</li>
+
+<li>
+<strong>Clave</strong> : texto (longitud máxima 15 caracteres). 
+</li>
+
+<li>
+<strong>Email</strong> : texto. 
+</li>
+
+<li>
+<strong>Sexo</strong> : entero pequeño. 
+</li>
+
+<li>
+<strong>FNacimiento</strong> : fecha. 
+</li>
+
+<li>
+<strong>Ciudad</strong> : texto; no se relaciona con una tabla porque los nombres de todas las ciudades del mundo es 
+imposible de conocer. 
+</li>
+
+<li>
+<strong>Pais</strong> : entero y clave ajena a Paises. 
+</li>
+
+<li>
+<strong>Foto</strong> : texto; contiene el nombre y quizás la ruta del fichero que almacena la foto, el uso de este campo 
+depende de la implementación que realice el alumno. 
+</li>
+
+<li>
+<strong>FRegistro</strong> : marca de tiempo (fecha y hora); fecha de registro en el sistema del usuario. 
+</li>
+</ul>
+
+<p><strong>Tabla Paises</strong></p>
+
+<ul>
+<li>
+<strong>IdPais</strong> : entero, autoincremento y clave primaria. 
+</li>
+
+<li>
+<strong>NomPais</strong> : texto. 
+</li>
+</ul>
+
+<p><strong>Tabla Albumes</strong></p>
+
+<ul>
+<li>
+<strong>IdAlbum</strong> : entero, autoincremento y clave primaria. 
+</li>
+
+<li>
+<strong>Titulo</strong> : texto. 
+</li>
+
+<li>
+<strong>Descripcion</strong> : texto. 
+</li>
+
+<li>
+<strong>Fecha</strong> : fecha; fecha en el que fueron tomadas las fotografías del álbum, si es un período de tiempo se 
+puede poner la fecha del primer día o dejar en blanco. 
+</li>
+
+<li>
+<strong>Pais</strong> : entero y clave ajena a Paises; país en el que se tomaron las fotos, si son varios se puede dejar en 
+blanco. 
+</li>
+
+<li>
+<strong>Usuario</strong> : entero y clave ajena a Usuarios.
+</li>
+</ul>
+
+<p><strong>Tabla Fotos</strong></p>
+
+<ul>
+<li>
+<strong>IdFoto</strong> : entero, autoincremento y clave primaria. 
+</li>
+
+<li>
+<strong>Titulo</strong> : texto. 
+</li>
+
+<li>
+<strong>Fecha</strong> : fecha; fecha en la que fue tomada la foto, se puede dejar en blanco. 
+</li>
+
+<li>
+<strong>Pais</strong> : entero y clave ajena a Paises; país en el que se tomo la foto, se puede dejar en blanco. 
+</li>
+
+<li>
+<strong>Album</strong> : entero y clave ajena a Albumes. 
+</li>
+
+<li>
+<strong>Fichero</strong> : texto; contiene el nombre y quizás la ruta del fichero que almacena la foto, el uso de este 
+campo depende de la implementación que realice el alumno. 
+</li>
+
+<li>
+<strong>FRegistro</strong> : marca de tiempo (fecha y hora); fecha de registro en el sistema de la foto, se emplea para 
+mostrar las últimas cinco fotos introducidas. 
+</li>
+</ul>
+
+<p>
+<strong>Nota:</strong> este diseño de la base de datos se verá modificado en prácticas posteriores
+cuando se incorporen algunas funcionalidades adicionales.
+</p>
+
+<p>
+El mantenimiento de la tabla <strong>Paises</strong> se realiza directamente a través de la base de datos: los datos 
+se introducen directamente en la tabla. Respecto a las otras tablas, el mantenimiento se realizará en 
+una próxima práctica, pero por ahora introduce los datos directamente en las tablas para poder hacer 
+pruebas. 
+</p>
+
+<p>
+Además, tienes que modificar las siguientes páginas (<a href="#figura1">Figura 1</a>) para que realicen la consulta <code>SELECT</code>
+correspondiente y visualicen el resultado obtenido (sustituye los datos estáticos que tengas en las páginas 
+web por los datos devueltos por la base de datos): 
+</p>
+
+<dl> 
+<dt>Página principal</dt>
+<dd>
+Contiene un listado con un resumen (foto, título, fecha, país) de las últimas cinco 
+fotos que se han introducido. 
+</dd>
+
+<dt>Página con el formulario de registro como nuevo usuario</dt>
+<dd>
+En la lista desplegable para seleccionar 
+el país, mostrar los países a partir de la tabla <strong>Paises</strong> de la base de datos. 
+</dd>
+
+<dt>Página con el formulario de búsqueda</dt>
+<dd>
+En la lista desplegable para seleccionar el país, mostrar los 
+países a partir de la tabla <strong>Paises</strong> de la base de datos. 
+</dd>
+
+<dt>Página con el listado resultado de una búsqueda</dt>
+<dd>
+A partir de los datos recibidos desde la [Página 
+con el formulario de búsqueda] (título, fecha y/o país) debe realizar una búsqueda en la tabla <strong>Fotos</strong>
+y mostrar el resultado obtenido. 
+</dd>
+
+<dt>Página detalle foto</dt>
+<dd>
+Muestra toda la información sobre una foto seleccionada en la página anterior 
+(foto, título, fecha, país, álbum de fotos y usuario al que pertenece). 
+</dd>
+
+<dt>Página control de acceso</dt>
+<dd>
+Controla el acceso a la parte privada para los usuarios registrados (los que 
+figuran en la tabla <strong>Usuarios</strong>). Si el usuario está registrado, mediante una redirección en la parte 
+del servidor se debe mostrar la página con el menú de usuario registrado; si el usuario no está 
+registrado, mediante una redirección en la parte del servidor se debe mostrar la página principal 
+del sitio web. 
+</dd>
+
+<dt>Página "Crear álbum"</dt>
+<dd>
+En la lista desplegable para seleccionar el país, mostrar los países a partir de 
+la tabla Paises de la base de datos. 
+</dd>
+
+<dt>Página "Mis álbumes"</dt>
+<dd>
+Muestra un listado con todos los álbumes del usuario. 
+</dd>
+
+<dt>Página "Ver álbum"</dt> 
+<dd>
+Desde la [Página "Mis álbumes"], muestra todas las fotos que contiene un álbum. 
+</dd>
+
+<dt>Página "Añadir foto a álbum"</dt> 
+<dd>
+Contiene un formulario con los datos necesarios para añadir una foto 
+(título, fecha, país, foto y álbum al que se añade la foto). 
+</dd>
+</dl>
+
+<figure id="figura1">
+<a href="http://idesweb.com/img/proyecto/prac10/diagrama.png"><img src="http://idesweb.com/img/proyecto/prac10/diagrama-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 1: Diagrama de páginas que componen el sitio web</figcaption>
+</figure>
+
+
+<hr id="prac-como-lo-hago" />
+
+<h3>¿Cómo lo hago?</h3>
+
+<h4>Creación de la base de datos desde la línea de comandos</h4>
+
+<p>
+Para crear la base de datos en MySQL tienes diferentes alternativas. Por un lado, puedes acceder a 
+MySQL a través de <strong>MySQL monitor</strong> que se encuentra en el directorio <code>\xampp\mysql\bin</code>.
+En la <a href="#figura2">Figura 2</a> podemos ver una sesión de ejecución con los siguientes comandos: 
+</p>
+
+<ul>
+<li>
+<code>mysql -u root</code>: inicia la conexión a la base de datos con el usuario root. 
+</li>
+
+<li>
+<code>show databases;</code>: muestra las bases de datos que existen. 
+</li>
+
+<li>
+<code>use library;</code>: selecciona una base de datos. 
+</li>
+
+<li>
+<code>show tables;</code>: muestra las tablas que existen en la base de datos. 
+</li>
+
+<li>
+<code>describe books;</code>: muestra el esquema de la tabla. 
+</li>
+</ul>
+
+<figure id="figura2">
+<a href="http://idesweb.com/img/proyecto/prac10/mysql.png"><img src="http://idesweb.com/img/proyecto/prac10/mysql-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 2: Acceso a MySQL desde la línea de comandos</figcaption>
+</figure>
+
+<p>
+Para crear la base de datos debemos emplear el lenguaje de definición de datos (<em>Data Definition 
+Language</em>, DDL) de SQL que permite definir las estructuras de la base de datos que almacenarán los 
+datos. En concreto, los comandos SQL más importantes que se utilizan para crear y mantener una base 
+de datos son: 
+</p>
+
+<ul>
+<li>
+<code>CREATE DATABASE</code>: crea una base de datos con el nombre dado. 
+</li>
+
+<li>
+<code>DROP DATABASE</code>: borra todas las tablas en la base de datos y borra la base de datos. 
+</li>
+
+<li>
+<code>CREATE TABLE</code>: crea una tabla con el nombre dado. 
+</li>
+
+<li>
+<code>ALTER TABLE</code>: permite cambiar la estructura de una tabla existente. 
+</li>
+
+<li>
+<code>DROP TABLE</code>: borra una o más tablas. 
+</li>
+</ul>
+
+<p>
+Además, MySQL es un sistema gestor de bases de datos que funciona con usuarios y permisos. Cuando 
+se realiza una conexión a una base de datos desde una página web se debe emplear un usuario especial 
+para reducir los riesgos de seguridad y evitar que un usuario malintencionado pueda modificar o incluso 
+eliminar toda una base de datos. El usuario para conectarse desde una página web debe tener otorgados 
+únicamente los permisos para manipular los datos (<code>SELECT, INSERT, UPDATE</code> y <code>DELETE</code>)
+y NO los  permisos para cambiar la estructura (<code>CREATE, ALTER</code>, etc.) o administrar
+(<code>GRANT, SHUTDOWN</code>, etc.) la base de datos. 
+</p>
+
+<p>
+En MySQL se puede crear una cuenta de usuario de tres formas: 
+</p>
+
+<ul>
+<li>
+Usando el comando <code>GRANT</code>.
+</li>
+
+<li>
+Manipulando las tablas de permisos de MySQL directamente. 
+</li>
+
+<li>
+Usar uno de los diversos programas proporcionados por terceras partes que ofrecen capacidades 
+para administradores de MySQL, como <strong>phpMyAdmin</strong>.
+</li>
+</ul>
+
+<p>
+Desde la línea de comandos el método preferido es usar el comando <code>GRANT</code>, ya que es más conciso 
+y menos propenso a errores que manipular directamente las tablas de permisos de MySQL. 
+</p>
+
+<p>
+Por ejemplo, las siguientes instrucciones crean un nuevo usuario llamado <code>wwwdata</code> con contraseña <code>abc</code>, 
+que sólo se puede usar cuando se conecte desde el equipo local (<code>localhost</code>) y le otorga únicamente los 
+permisos <code>SELECT, INSERT, UPDATE</code> y <code>DELETE</code> sobre todas las bases de datos alojadas en el servidor: 
+</p>
+
+<pre>
+# Crea un nuevo usuario 
+CREATE USER 'wwwdata'@'localhost' IDENTIFIED BY 'abc'; 
+# Otorga los permisos para poder manipular los datos 
+# sobre todas las bases de datos (*.*) 
+GRANT SELECT, INSERT, UPDATE, DELETE ON *.* TO 'wwwdata'@'localhost' 
+IDENTIFIED BY 'abc' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 
+MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ; 
+# Recarga los permisos de las tablas (en principio, no es necesario porque 
+# GRANT debe hacerlo de forma automática) 
+FLUSH PRIVILEGES; 
+</pre>
+
+<p>
+Una ver creado un usuario, podemos consultar sus permisos con el comando <code>SHOW GRANTS</code>, tal 
+como podemos ver en la <a href="#figura3">Figura 3</a>. 
+</p>
+
+<figure id="figura3">
+<a href="http://idesweb.com/img/proyecto/prac10/mysql-showgrants.png"><img src="http://idesweb.com/img/proyecto/prac10/mysql-showgrants-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 3: Privilegios de un usuario en MySQL</figcaption>
+</figure>
+
+<p>
+Desde la línea de comandos también se pueden ejecutar otros programas, como <code>mysqladmin</code>, <code>mysqlcheck</code>, 
+<code>mysqldump</code> o <code>mysqlshow</code>. 
+</p>
+
+
+<h4>Creación de la base de datos desde phpMyAdmin</h4>
+
+<p>
+<strong>phpMyAdmin</strong> es una herramienta escrita en <abbr title="PHP Hypertext Pre-processor">PHP</abbr>
+que permite la administración de una base de datos de MySQL a través de páginas web, ya sea en local o de forma remota a través de Internet. Es un 
+desarrollo de código abierto y está disponible bajo la licencia <abbr title="General Public License">GPL</abbr>. 
+</p>
+
+<p>
+En la <a href="#figura4">Figura 4</a> podemos ver la pantalla principal de la aplicación. En el panel de la izquierda aparecen 
+las bases de datos que existen y entre paréntesis se indica el número de tablas que posee cada base de 
+datos. En la parte principal de la pantalla se indica la versión del servidor de MySQL y el usuario que 
+se está empleando para conectarse. En XAMPP, por defecto se emplea el usuario "root" sin contraseña, lo que supone 
+una vulnerabilidad del sistema ya que facilita un posible ataque. Para evitarlo, es conveniente asignar 
+una contraseña al usuario "root" en MySQL y configurar la contraseña para phpMyAdmin en el fichero 
+<code>config.inc.php</code>. 
+</p>
+
+<figure id="figura4">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-principal.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-principal-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 4: Página principal de phpMyAdmin</figcaption>
+</figure>
+
+<p>
+Además, en la página principal existen varias funciones, como crear una nueva base de datos, modificar 
+los privilegios o importar y exportar el esquema y los datos de una base de datos. 
+</p>
+
+<p>
+Desde la pantalla principal se puede crear una nueva base de datos. Una vez creada, aparece la pantalla 
+que podemos ver en la <a href="#figura5">Figura 5</a>; en esta pantalla se visualiza la sentencia SQL que ha creado la base 
+de datos y se puede indicar el nombre para una nueva tabla en la base de datos recién creada. En este 
+último caso, también hay que indicar el número de campos (columnas) que se quiere que tenga la tabla; 
+más adelante se pueden añadir más campos en cualquier momento. 
+</p>
+
+<figure id="figura5">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creabd.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creabd-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 5: Creación de una nueva base de datos en phpMyAdmin</figcaption>
+</figure>
+
+<p>
+En la <a href="#figura6">Figura 6</a> podemos ver la pantalla de creación de una nueva tabla con dos campos. En esta 
+pantalla se tiene que indicar la definición de cada campo (columna) de la tabla, como el nombre del 
+campo, el tipo de dato, si admite valor nulo, si es clave primaria, etc. Esta pantalla cambia de aspecto 
+según el número de campos que tenga la tabla; por ejemplo, en la <a href="#figura7">Figura 7</a> podemos ver la misma pantalla 
+pero cuando una tabla posee siete campos, en vez de una disposición vertical la definición de los campos 
+adquiere una disposición horizontal. 
+</p>
+
+<figure id="figura6">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla1.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla1-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 6: Creación de una nueva tabla en phpMyAdmin</figcaption>
+</figure>
+
+<figure id="figura7">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla2.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla2-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 7: Creación de una nueva tabla en phpMyAdmin </figcaption>
+</figure>
+
+<p>
+Además, se tiene que seleccionar el motor de almacenamiento para la tabla. MySQL permite seleccionar 
+diferentes motores de almacenamiento. La principal diferencia entre los distintos motores reside en el 
+soporte de las transacciones, el manejo de las claves ajenas y el particionamiento de las tablas. 
+</p>
+
+<p>
+En la <a href="#figura8">Figura 8</a> podemos ver la pantalla de respuesta que aparece al crear una nueva tabla. En esta 
+pantalla figura la sentencia SQL de creación de la tabla y también se puede modificar la estructura de la tabla recién creada.
+</p>
+
+<figure id="figura8">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla3.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla3-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 8: Creación de una nueva tabla en phpMyAdmin</figcaption>
+</figure>
+
+<p>
+Una vez creada una tabla se pueden insertar datos en la misma. Para ello se emplea la opción Insertar 
+que muestra un formulario como el de la <a href="#figura9">Figura 9</a>. En este formulario aparecen todos los campos que 
+componen una tabla y para cada campo se indica su tipo de dato. Cuando un campo es de tipo autoincremento la base de datos
+le asignará un valor de forma automática, pero de todas formas aparecerá en 
+el formulario de inserción, por lo que se debe dejar vacío. 
+</p>
+
+<figure id="figura9">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-insertar.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-insertar-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 9: Inserción de datos en una tabla en phpMyAdmin</figcaption>
+</figure>
+
+<p>
+Por último, y tal como se ha explicado en el apartado anterior, se debe emplear un usuario específico 
+para conectarse desde una página web, que tenga otorgados únicamente los permisos para manipular 
+los datos (<code>SELECT, INSERT, UPDATE</code> y <code>DELETE</code>). En la <a href="#figura10">Figura 10</a> podemos ver la pantalla de la 
+opción Privilegios, donde se muestran todos los usuarios que existen y los permisos que poseen. Desde 
+esta pantalla se puede acceder a la función agregar un nuevo usuario que vemos en la <a href="#figura11">Figura 11</a>. 
+</p>
+
+<figure id="figura10">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-privilegios.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-privilegios-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 10: Privilegios en phpMyAdmin</figcaption>
+</figure>
+
+<figure id="figura11">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-agregarusuario.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-agregarusuario-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 11: Agregar un nuevo usuario en phpMyAdmin</figcaption>
+</figure>
+
+<h4>Acceso a la base de datos desde PHP</h4>
+
+<p>
+Desde PHP se puede acceder fácilmente a una base de datos en MySQL empleando las más de 50 
+funciones que existen. Las principales funciones que se emplean para acceder a una base de datos son: 
+</p>
+
+<ul>
+<li>
+<code>mysql_connect(servidorBD, usuario, contraseña)</code>: abre una conexión con un servidor de bases
+de datos de MySQL, devuelve un <code>identificador</code> que se emplea en algunas de las siguientes 
+funciones o <code>FALSE</code> en caso de error. 
+</li>
+
+<li>
+<code>mysql_close(identificador)</code>: cierra una conexión con un servidor de MySQL, devuelve <code>TRUE</code> en 
+caso de éxito y <code>FALSE</code> en caso contrario. 
+</li>
+
+<li>
+<code>mysql_ping(identificador)</code>: verifica que la conexión con el servidor de bases de datos funciona, 
+devuelve <code>TRUE</code> en caso de éxito y <code>FALSE</code> en caso contrario. 
+</li>
+
+<li>
+<code>mysql_select_db(nombreBD, identificador)</code>: selecciona una base de datos, devuelve <code>TRUE</code> en 
+caso de éxito y <code>FALSE</code> en caso contrario. 
+</li>
+
+<li>
+<code>mysql_query(sentencia, identificador)</code>: ejecuta una sentencia SQL y devuelve un resultado 
+(<code>SELECT, SHOW, EXPLAIN</code> o <code>DESCRIBE</code>, ...) o <code>TRUE</code> (<code>INSERT, UPDATE, DELETE</code>, ...) si todo 
+es correcto, o <code>FALSE</code> en caso contrario. 
+</li>
+
+<li>
+<code>mysql_fecth_array(resultado)</code>: recorre un resultado, devuelve un array que representa una fila 
+(registro) o <code>FALSE</code> en caso de error (por ejemplo, llegar al final del resultado); al array se puede 
+acceder de forma numérica (posición de la columna) o asociativa (nombre de la columna). 
+</li>
+
+<li>
+<code>mysql_fetch_assoc(resultado)</code> y <code>mysql_fetch_row(resultado)</code>: ambas funciones son similares 
+a la anterior <code>mysql_fecth_array(resultado)</code>, pero sólo permiten el acceso como array asociativo 
+o con índices numéricos respectivamente. 
+</li>
+
+<li>
+<code>mysql_affected_rows(identificador)</code>: devuelve el número de filas (tuplas) afectadas por la última
+operación si fue del tipo <code>INSERT, UPDATE</code>, etc., que no devuelven un resultado. 
+</li>
+
+<li>
+<code>mysql_num_rows(resultado)</code>: devuelve el número de filas (tuplas) afectadas por la última operación
+si fue del tipo <code>SELECT</code>.
+</li>
+
+<li>
+<code>mysql_free_result(resultado)</code>: libera la memoria ocupada por un resultado; en principio, se 
+libera automáticamente al finalizar la página, es necesario si en una misma página se realizan varias 
+consultas con resultados muy grandes. 
+</li>
+</ul>
+
+<p>
+El siguiente ejemplo muestra como visualizar todo el contenido de una tabla en una página web. En 
+concreto, se conecta al servidor local con el usuario <code>wwwdata</code> sin contraseña, selecciona la base de datos 
+biblioteca, recupera todo el contenido de la tabla <code>libros</code> y muestra los campos <code>Titulo</code> y <code>Resumen</code>: 
+</p>
+
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt; 
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; 
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt; 
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;es&quot; lang=&quot;es&quot;&gt; 
+&lt;head&gt; 
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt; 
+&lt;title&gt;Prueba de SELECT y MySQL&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;?php 
+  // Se conecta al SGBD 
+  if(!($iden = mysql_connect(&quot;localhost&quot;, &quot;wwwdata&quot;, &quot;&quot;))) 
+    die(&quot;Error: No se pudo conectar&quot;);
+	
+  // Selecciona la base de datos 
+  if(!mysql_select_db(&quot;biblioteca&quot;, $iden)) 
+    die(&quot;Error: No existe la base de datos&quot;);
+	
+  // Sentencia SQL: muestra todo el contenido de la tabla &quot;books&quot; 
+  $sentencia = &quot;SELECT * FROM libros&quot;; 
+  // Ejecuta la sentencia SQL 
+  $resultado = mysql_query($sentencia, $iden); 
+  if(!$resultado) 
+    die(&quot;Error: no se pudo realizar la consulta&quot;);
+	
+  echo '&lt;table&gt;'; 
+  while($fila = mysql_fetch_assoc($resultado)) 
+  { 
+    echo '&lt;tr&gt;'; 
+    echo '&lt;td&gt;' . $fila['Titulo'] . '&lt;/td&gt;&lt;td&gt;' . $fila['Resumen'] . '&lt;/td&gt;'; 
+    echo '&lt;/tr&gt;'; 
+  } 
+  echo '&lt;/table&gt;';
+  
+  // Libera la memoria del resultado
+  mysql_free_result($resultado);
+  
+  // Cierra la conexión con la base de datos 
+  mysql_close($iden); 
+?&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </pre>
+
+<p>
+El siguiente ejemplo es similar al anterior, pero emplea una función llamada <code>sql_dump_result(resultado)</code>
+que visualiza todo el contenido del resultado de una consulta <code>SELECT</code> en forma de tabla de HTML, sin 
+tener que indicar uno a uno los campos que componen el resultado; además, la primera fila de la tabla 
+creada contiene los nombres de los campos a modo de encabezados de las columnas de la tabla: 
+</p>
+
+<pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;iso-8859-1&quot;?&gt; 
+&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; 
+&quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt; 
+&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xml:lang=&quot;es&quot; lang=&quot;es&quot;&gt; 
+&lt;head&gt; 
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=iso-8859-1&quot; /&gt; 
+&lt;title&gt;Prueba de SELECT y MySQL&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;?php 
+  // Devuelve todas las filas de una consulta a una tabla de una base de datos 
+  // en forma de tabla de HTML 
+  function sql_dump_result($result) 
+  { 
+    $line = ''; 
+    $head = '';
+	
+  while($temp = mysql_fetch_assoc($result)) 
+  { 
+    if(empty($head)) 
+    { 
+      $keys = array_keys($temp); 
+      $head = '&lt;tr&gt;&lt;th&gt;' . implode('&lt;/th&gt;&lt;th&gt;', $keys). '&lt;/th&gt;&lt;/tr&gt;'; 
+    }
+	
+    $line .= '&lt;tr&gt;&lt;td&gt;' . implode('&lt;/td&gt;&lt;td&gt;', $temp). '&lt;/td&gt;&lt;/tr&gt;'; 
+  }
+  
+  return '&lt;table&gt;' . $head . $line . '&lt;/table&gt;'; 
+}
+
+  // Se conecta al SGBD 
+  if(!($iden = mysql_connect(&quot;localhost&quot;, &quot;wwwdata&quot;, &quot;&quot;))) 
+    die(&quot;Error: No se pudo conectar&quot;);
+	
+  // Selecciona la base de datos 
+  if(!mysql_select_db(&quot;biblioteca&quot;, $iden))
+    die(&quot;Error: No existe la base de datos&quot;); 
+	
+  // Sentencia SQL: muestra todo el contenido de la tabla &quot;books&quot; 
+  $sentencia = &quot;SELECT * FROM libros&quot;; 
+  // Ejecuta la sentencia SQL 
+  $resultado = mysql_query($sentencia, $iden); 
+  if(!$resultado) 
+    die(&quot;Error: no se pudo realizar la consulta&quot;);
+
+  // Muestra el contenido de la tabla como una tabla HTML	
+  echo sql_dump_result($resultado); 
+  
+  // Libera la memoria del resultado
+  mysql_free_result($resultado);
+
+  // Cierra la conexión con la base de datos 
+  mysql_close($iden); 
+?&gt; 
+&lt;/body&gt; 
+&lt;/html&gt; </pre>
+
+
+<hr id="prac-recomendaciones" />
+
+<h3>Recomendaciones</h3>
+
+<p>
+Recuerda que las páginas que contengan código PHP tienen que tener la extensión <code>.php</code>. Si modificas 
+alguna página web que ya tengas hecha de prácticas anteriores para añadirle código PHP, tendrás que 
+cambiarle la extensión y corregir todos los enlaces que apunten a esa página. 
+</p>
+
+<p>
+La página web
+<a href="http://www.databasejournal.com/features/mysql/article.php/1383591/Build-Your-Own-Database-Driven-Website-Using-PHP--MySQL-Pt-1.htm">Build Your Own Database Driven Website Using PHP &amp; MySQL</a>
+explica en cuatro partes (<em>Introduction</em>, <em>The Database Server</em>, <em>PHP server-side scripting language</em>
+y <em>Displaying Information on a Web page</em>) cómo construir un sitio web con información procedente de una base de datos en MySQL. 
+</p>
+
+<p>
+Recuerda: nunca te conectes a una base de datos con el usuario "root" desde una página web. Emplea 
+un usuario específico que tenga el mínimo posible de permisos. Por ejemplo, si en una página web sólo 
+necesitas mostrar el contenido de las tablas de una base de datos, pero no necesitas actualizar o insertar 
+nuevos datos, utiliza un usuario que sólo tenga el permiso <code>SELECT</code> sobre esa base de datos. De este 
+modo reducirás los posibles problemas de seguridad. 
+</p>
+
+<p>
+Fíjate que en varias páginas se pide <em>en la lista desplegable para seleccionar el país, mostrar los países 
+a partir de la tabla <strong>paises</strong> de la base de datos</em>. Cuando una parte de una página web se repita en varias 
+páginas, lo mejor es aislar el código común en un fichero independiente e incluirlo en aquellos puntos 
+donde haga falta. 
+</p>
+
+<p>
+Utiliza esta misma técnica para almacenar en un fichero independiente los datos necesarios para 
+establecer la conexión con la base de datos; de este modo, si algo cambia, sólo lo tendrás que cambiar en 
+un fichero. 
+</p>
+
+<p>
+Aunque no se pide implementarlo en esta práctica, cuando se muestra un listado a partir de una 
+consulta a una base de datos y no existe un límite para el número de resultados devueltos es conveniente 
+mostrar el listado paginado para evitar que se devuelva una página web enorme que aumente su tiempo 
+de transmisión y dificulte su lectura. ¿Te atreves a hacerlo?
+</p>
+
+<p>
+El manual de MySQL te lo puedes descargar en diferentes formatos de su <a href="http://dev.mysql.com/doc/">sitio web</a>
+para tenerlo siempre a mano y poder hacer las búsquedas de información rápidamente. Cuando lo descargues, elige la 
+versión correspondiente a tu servidor de MySQL. 
+</p>
+
+<p>
+Si quieres guardar una copia de seguridad de una base de datos, puedes emplear la opción <strong>Exportar</strong>
+de phpMyAdmin que se muestra en la <a href="#figura12">Figura 12</a>. 
+</p>
+
+<figure id="figura12">
+<a href="http://idesweb.com/img/proyecto/prac10/phpmyadmin-export.png"><img src="http://idesweb.com/img/proyecto/prac10/phpmyadmin-export-mini.png" alt="" class="flex640" /></a>
+<figcaption>Figura 12: Exportar desde phpMyAdmin</figcaption>
+</figure>
+
+
+<hr id="prac-recursos" />
+
+<h3>Recursos</h3>
+
+<p>
+¿Qué tipos de datos admite MySQL? ¿Qué funciones existen en MySQL? 
+</p>
+
+<ul>
+<li>
+<a href="http://dev.mysql.com/">MySQL Developer Zone</a> : sitio web oficial de MySQL con información para desarrolladores. 
+</li>
+
+<li>
+<a href="http://www.addedbytes.com/cheat--sheets/mysql--cheat--sheet/">MySQL Cheat Sheet</a> : resumen de los tipos de datos y de las diversas funciones (de fecha y hora, matemáticas, etc.) disponibles en MySQL. También incluye una lista de las funciones disponibles en PHP para conectarse a MySQL y ejemplos de la consulta SELECT. 
+</li>
+
+<li>
+<a href="http://www.nparikh.org/unix/mysql.php">MySQL Cheat Sheet</a> : resumen de los principales comandos de MySQL. 
+</li>
+
+<li>
+<a href="http://www.digilife.be/quickreferences/QRC/MySQL--4.02a.pdf">MySQL Quick Reference</a> : guía de referencia rápida de lo más importante de MySQL (tipos de datos, funciones para usar en sentencias SELECT y WHERE, lenguaje de definición de datos, 
+lenguaje de manipulación de datos, comandos de usuario y comandos de transacciones y bloqueos). 
+</li>
+
+<li>
+<a href="http://www.nparikh.org/unix/mysql.php">MySQL Reference Sheet</a> : resumen de los tipos de datos y funciones de MySQL. 
+</li>
+</ul>
+
+<p>
+¿Qué es el lenguaje <abbr title="Standard Query Language">SQL</abbr>? ¿Qué sintaxis tiene el lenguaje SQL? 
+</p>
+
+<ul>
+<li>
+<a href="http://es.wikipedia.org/wiki/SQL">SQL</a> : definición en la Wikipedia del lenguaje SQL.
+</li>
+
+<li>
+<a href="http://www.w3schools.com">W3Schools</a> : cursos de aprendizaje y guías de referencia de diversas tecnologías empleadas en la programación web. Incluye un <a href="http://www.w3schools.com/sql/default.asp"> tutorial y temas avanzados sobre SQL</a>. 
+</li>
+
+<li>
+<a href="http://www.sqlcourse.com/">SQLCourse</a> : sencillo tutorial sobre el lenguaje SQL. 
+</li>
+
+<li>
+<a href="http://www.3gwt.net/demo/SQL_redux.html">SQL Cheat</a> : resumen de las sentencias principales del lenguaje SQL. 
+</li>
+</ul>
+
+<p>
+¿Qué herramientas existen para trabajar con MySQL? 
+</p>
+
+<ul>
+<li>
+<a href="http://www.phpmyadmin.net/">phpMyAdmin</a> : permite crear y gestionar una base de datos en MySQL a través de una página web. 
+</li>
+
+<li>
+<a href="http://phpminadmin.sourceforge.net/">phpMinAdmin</a> : script escrito en PHP en un solo fichero que permite administrar una base de datos en MySQL, similar a phpMyAdmin, pero no es tan potente ni tan complejo. 
+</li>
+
+<li>
+<a href="http://dev.mysql.com/downloads/gui--tools/">MySQL GUI Tools</a> : incluye las herramientas MySQL Administrator 1.2, MySQL Query Brow-ser 1.2 y MySQL Migration Toolkit 1.1. 
+</li>
+
+<li>
+<a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a> : herramienta visual que permite diseñar, gestionar y documentar una base de datos en MySQL. 
+</li>
+</ul>
+
+<p>
+¿Qué funciones se emplean en PHP para acceder a MySQL? 
+</p>
+
+<ul>
+<li>
+<a href="http://es.php.net/manual/es/book.mysql.php">PHP MySQL</a> : documentación oficial del uso de MySQL desde PHP. 
+</li>
+
+<li>
+<a href="http://www.w3schools.com/PHP/php_mysql_intro.asp">PHP MySQL Introduction</a> : tutorial de W3Schools sobre el uso de una base de datos de MySQL desde PHP.
+</li>
+</ul>
+
+<p>
+¿Existe algún peligro cuando se accede a una base de datos desde una página web? 
+</p>
+
+<ul>
+<li>
+<a href="http://es.wikipedia.org/wiki/Inyecci%C3%B3n_SQL">Inyección SQL</a> : definición en la Wikipedia de este tipo de vulnerabilidad informática. 
+</li>
+
+<li>
+<a href="http://www.php--es.com/security.database.sql-injection.html">Inyección de SQL</a> : explica qué es la inyección de SQL y algunas técnicas de protección con PHP. 
+</li>
+
+<li>
+<a href="http://ferruh.mavituna.com/sql--injection--cheatsheet--oku/">SQL Injection Cheat Sheet</a> : resumen de algunos métodos de inyección de SQL para distintos sistemas gestores de bases de datos. 
+</li>
+</ul> </div> <!-- /container -->
+</div> <!-- /container -->    <footer class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container">
+	      <ul class="nav visible-desktop">
+		  <li><a href="http://idesweb.es/copyright">&copy; 2012 iDESWEB</a></li>
+          <li><script type="text/javascript">
+	//<![CDATA[
+	var l=new Array();
+	l[0]='>';l[1]='a';l[2]='/';l[3]='<';l[4]='|115';l[5]='|101';l[6]='|46';l[7]='|98';l[8]='|101';l[9]='|119';l[10]='|115';l[11]='|101';l[12]='|100';l[13]='|105';l[14]='|64';l[15]='|119';l[16]='|100';l[17]='|105';l[18]='>';l[19]='"';l[20]='|111';l[21]='|99';l[22]='|105';l[23]='|110';l[24]='|111';l[25]='|114';l[26]='|116';l[27]='|99';l[28]='|101';l[29]='|108';l[30]='|101';l[31]='|32';l[32]='|111';l[33]='|101';l[34]='|114';l[35]='|114';l[36]='|111';l[37]='|99';l[38]='|32';l[39]='|114';l[40]='|97';l[41]='|105';l[42]='|118';l[43]='|110';l[44]='|69';l[45]=' title="';l[46]='"';l[47]='|115';l[48]='|101';l[49]='|46';l[50]='|98';l[51]='|101';l[52]='|119';l[53]='|115';l[54]='|101';l[55]='|100';l[56]='|105';l[57]='|64';l[58]='|119';l[59]='|100';l[60]='|105';l[61]=':';l[62]='o';l[63]='t';l[64]='l';l[65]='i';l[66]='a';l[67]='m';l[68]='"';l[69]='=';l[70]='f';l[71]='e';l[72]='r';l[73]='h';l[74]=' ';l[75]='a';l[76]='<';
+	for (var i = l.length-1; i >= 0; i=i-1){
+	if (l[i].substring(0, 1) == '|') document.write("&#"+unescape(l[i].substring(1))+";");
+	else document.write(unescape(l[i]));}
+	//]]>
+	</script></li>
+          <li><a href="http://idesweb.es/acercade">Acerca de</a></li>
+          <li><a href="http://idesweb.es/contacto">Contacto</a></li>
+		  <li><a href="http://idesweb.es/colaborar">Colaborar</a></li>
+		  <li><a href="http://idesweb.es/reutilizar">Reutilizar</a></li>
+		  <li><a href="http://idesweb.es/preguntas-y-respuestas">Preguntas y respuestas</a></li>
+		  <!-- <li class="divider-vertical"></li> -->
+		  <li><a href="http://www.ua.es/" title="Universidad de Alicante">UA</a></li>
+		  <li><a href="http://www.dlsi.ua.es/" title="Departamento de Lenguajes y Sistemas Informáticos">DLSI</a></li>
+          </ul>
+		  
+			<ul class="nav nav-pills visible-phone visible-tablet">
+		  <li><a href="http://idesweb.es/copyright">&copy; 2012 iDESWEB</a></li>
+          <li><script type="text/javascript">
+	//<![CDATA[
+	var l=new Array();
+	l[0]='>';l[1]='a';l[2]='/';l[3]='<';l[4]='|115';l[5]='|101';l[6]='|46';l[7]='|98';l[8]='|101';l[9]='|119';l[10]='|115';l[11]='|101';l[12]='|100';l[13]='|105';l[14]='|64';l[15]='|119';l[16]='|100';l[17]='|105';l[18]='>';l[19]='"';l[20]='|111';l[21]='|99';l[22]='|105';l[23]='|110';l[24]='|111';l[25]='|114';l[26]='|116';l[27]='|99';l[28]='|101';l[29]='|108';l[30]='|101';l[31]='|32';l[32]='|111';l[33]='|101';l[34]='|114';l[35]='|114';l[36]='|111';l[37]='|99';l[38]='|32';l[39]='|114';l[40]='|97';l[41]='|105';l[42]='|118';l[43]='|110';l[44]='|69';l[45]=' title="';l[46]='"';l[47]='|115';l[48]='|101';l[49]='|46';l[50]='|98';l[51]='|101';l[52]='|119';l[53]='|115';l[54]='|101';l[55]='|100';l[56]='|105';l[57]='|64';l[58]='|119';l[59]='|100';l[60]='|105';l[61]=':';l[62]='o';l[63]='t';l[64]='l';l[65]='i';l[66]='a';l[67]='m';l[68]='"';l[69]='=';l[70]='f';l[71]='e';l[72]='r';l[73]='h';l[74]=' ';l[75]='a';l[76]='<';
+	for (var i = l.length-1; i >= 0; i=i-1){
+	if (l[i].substring(0, 1) == '|') document.write("&#"+unescape(l[i].substring(1))+";");
+	else document.write(unescape(l[i]));}
+	//]]>
+	</script></li>		
+                  <li class="dropdown" id="menu-secundario">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú secundario <span class="hide">(repetido, lo siento)</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+          <li><a href="http://idesweb.es/acercade">Acerca de</a></li>
+          <li><a href="http://idesweb.es/contacto">Contacto</a></li>
+		  <li><a href="http://idesweb.es/colaborar">Colaborar</a></li>
+		  <li><a href="http://idesweb.es/reutilizar">Reutilizar</a></li>
+		  <li><a href="http://idesweb.es/preguntas-y-respuestas">Preguntas y respuestas</a></li>
+		  <li class="divider"></li>
+		  <li><a href="http://www.ua.es/" title="Universidad de Alicante">UA</a></li>
+		  <li><a href="http://www.dlsi.ua.es/" title="Departamento de Lenguajes y Sistemas Informáticos">DLSI</a></li>
+                    </ul>
+                  </li>
+			</ul>
+		  
+        </div> <!-- /container -->
+	  </div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://idesweb.com/js/jquery-1.8.0.min.js"><\/script>')</script>
+	<script src="http://idesweb.com/bootstrap/js/bootstrap-dropdown.js"></script>
+  </body>
+</html>�3?�      [p�6[p�9?a�M       J    :http://idesweb.es/proyecto/proyecto-prac10-php-mysql-acceso-base-de-datos necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 13 Aug 2018 01:00:38 GMT
+Content-Type: text/html
+X-Powered-By: PHP/5.4.16, PleskLin
+ original-response-headers Server: nginx
+Date: Mon, 13 Aug 2018 01:00:38 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/5.4.16
+X-Powered-By: PleskLin
+ uncompressed-len 0 predictor::resource-count 18 predictor::http://idesweb.com/bootstrap/css/bootstrap.min.css 1,1,1534122038,4096 predictor::http://idesweb.com/bootstrap/css/bootstrap-responsive.min.css 1,1,1534122038,4096 predictor::http://idesweb.com/css/extrastyle.css 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/diagrama-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/mysql-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/mysql-showgrants-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-principal-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-creabd-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla1-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla2-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-creatabla3-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-insertar-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-privilegios-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-agregarusuario-mini.png 1,1,1534122038,4096 predictor::http://idesweb.com/img/proyecto/prac10/phpmyadmin-export-mini.png 1,1,1534122038,4096 predictor::http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js 1,1,1534122038,4096 net-response-time-onstart 590 net-response-time-onstop 943 predictor::http://idesweb.com/bootstrap/js/bootstrap-dropdown.js 1,1,1534122038,4096 predictor::http://www.google-analytics.com/ga.js 1,1,1534122038,4096   �n

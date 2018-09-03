@@ -1,0 +1,2 @@
+SELECT descripcion
+FROM `bd1`.`tabla1`;

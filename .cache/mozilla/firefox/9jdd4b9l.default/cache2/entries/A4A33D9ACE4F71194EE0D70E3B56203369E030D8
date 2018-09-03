@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Error página no encontrada - Introducción al desarrollo web - iDESWEB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="iDESWEB, un curso nuevo de tipo MOOC, online y totalmente gratuito, con el que vas a aprender los conceptos básicos del desarrollo de aplicaciones web." />
+	<meta name="keywords" content="curso, mooc, gratuito, gratis, online, introducción, web, World Wide Web, WWW, HTML, XHTML, HTML5, CSS, CSS3, DOM, JavaScript, JS, jQuery, XHR, JSON, XML, AJAX, CGI, PHP, MySQL, phpMyAdmin, CodeIgniter, accesibilidad, accessibility, usabilidad, usability, World Wide Web Consortium, W3C" />
+    <meta name="author" content="Sergio Luján Mora">
+
+    <!-- Le styles -->
+    <link href="http://idesweb.com/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://idesweb.com/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="http://idesweb.com/css/extrastyle.css" rel="stylesheet" />
+	
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://idesweb.com/favicon.ico" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33916249-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>	
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <h1><a class="brand" href="http://idesweb.es/">iDESWEB: Introducción al desarrollo web</a></h1>
+          
+            <ul class="nav visible-desktop">
+			  <li><a href="http://idesweb.es/apuntate">¡Apúntate!</a></li>
+			  <li><a href="http://idesweb.es/temario">Temario</a></li>
+			  <li><a href="http://idesweb.es/proyecto">Proyecto</a></li>
+			  <li><a href="http://idesweb.es/calendario">Calendario</a></li>
+			  <li><a href="http://idesweb.es/metodologia">Metodología</a></li>
+			  <li><a href="http://idesweb.es/profesores">Profesores</a></li>
+			  <!-- <li class="divider-vertical"></li> -->
+			  <li><a href="http://www.youtube.com/user/idesweb/">YouTube</a></li>
+			  <li><a href="http://idesweb.blogspot.com">Blog</a></li>
+              <li><a href="http://www.twitter.com/idesweb/">Twitter</a></li>
+            </ul>
+			
+			<ul class="nav nav-pills visible-phone visible-tablet">
+                  <li class="dropdown" id="menu-principal">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú principal <span class="hide">(repetido, lo siento)</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+			  <li><a href="http://idesweb.es/apuntate">¡Apúntate!</a></li>					
+			  <li><a href="http://idesweb.es/temario">Temario</a></li>
+			  <li><a href="http://idesweb.es/proyecto">Proyecto</a></li>
+			  <li><a href="http://idesweb.es/calendario">Calendario</a></li>
+			  <li><a href="http://idesweb.es/metodologia">Metodología</a></li>
+			  <li><a href="http://idesweb.es/profesores">Profesores</a></li>
+			  <li class="divider"></li>
+              <li><a href="http://www.youtube.com/user/idesweb/">YouTube</a></li>
+			  <li><a href="http://idesweb.blogspot.com">Blog</a></li>
+              <li><a href="http://www.twitter.com/idesweb/">Twitter</a></li>					
+                    </ul>
+                  </li>
+			</ul>
+          
+        </div>
+      </div>
+    </div><div class="container">
+<div class="alert alert-error">
+  <p><span class="label label-important">Error</span></p>
+  <p>Lo sentimos, pero hay un error con la página que estás intentando ver, no la podemos encontrar.</p>
+</div>
+</div> <!-- /container -->    <footer class="navbar navbar-fixed-bottom">
+      <div class="navbar-inner">
+        <div class="container">
+	      <ul class="nav visible-desktop">
+		  <li><a href="http://idesweb.es/copyright">&copy; 2012 iDESWEB</a></li>
+          <li><script type="text/javascript">
+	//<![CDATA[
+	var l=new Array();
+	l[0]='>';l[1]='a';l[2]='/';l[3]='<';l[4]='|115';l[5]='|101';l[6]='|46';l[7]='|98';l[8]='|101';l[9]='|119';l[10]='|115';l[11]='|101';l[12]='|100';l[13]='|105';l[14]='|64';l[15]='|119';l[16]='|100';l[17]='|105';l[18]='>';l[19]='"';l[20]='|111';l[21]='|99';l[22]='|105';l[23]='|110';l[24]='|111';l[25]='|114';l[26]='|116';l[27]='|99';l[28]='|101';l[29]='|108';l[30]='|101';l[31]='|32';l[32]='|111';l[33]='|101';l[34]='|114';l[35]='|114';l[36]='|111';l[37]='|99';l[38]='|32';l[39]='|114';l[40]='|97';l[41]='|105';l[42]='|118';l[43]='|110';l[44]='|69';l[45]=' title="';l[46]='"';l[47]='|115';l[48]='|101';l[49]='|46';l[50]='|98';l[51]='|101';l[52]='|119';l[53]='|115';l[54]='|101';l[55]='|100';l[56]='|105';l[57]='|64';l[58]='|119';l[59]='|100';l[60]='|105';l[61]=':';l[62]='o';l[63]='t';l[64]='l';l[65]='i';l[66]='a';l[67]='m';l[68]='"';l[69]='=';l[70]='f';l[71]='e';l[72]='r';l[73]='h';l[74]=' ';l[75]='a';l[76]='<';
+	for (var i = l.length-1; i >= 0; i=i-1){
+	if (l[i].substring(0, 1) == '|') document.write("&#"+unescape(l[i].substring(1))+";");
+	else document.write(unescape(l[i]));}
+	//]]>
+	</script></li>
+          <li><a href="http://idesweb.es/acercade">Acerca de</a></li>
+          <li><a href="http://idesweb.es/contacto">Contacto</a></li>
+		  <li><a href="http://idesweb.es/colaborar">Colaborar</a></li>
+		  <li><a href="http://idesweb.es/reutilizar">Reutilizar</a></li>
+		  <li><a href="http://idesweb.es/preguntas-y-respuestas">Preguntas y respuestas</a></li>
+		  <!-- <li class="divider-vertical"></li> -->
+		  <li><a href="http://www.ua.es/" title="Universidad de Alicante">UA</a></li>
+		  <li><a href="http://www.dlsi.ua.es/" title="Departamento de Lenguajes y Sistemas Informáticos">DLSI</a></li>
+          </ul>
+		  
+			<ul class="nav nav-pills visible-phone visible-tablet">
+		  <li><a href="http://idesweb.es/copyright">&copy; 2012 iDESWEB</a></li>
+          <li><script type="text/javascript">
+	//<![CDATA[
+	var l=new Array();
+	l[0]='>';l[1]='a';l[2]='/';l[3]='<';l[4]='|115';l[5]='|101';l[6]='|46';l[7]='|98';l[8]='|101';l[9]='|119';l[10]='|115';l[11]='|101';l[12]='|100';l[13]='|105';l[14]='|64';l[15]='|119';l[16]='|100';l[17]='|105';l[18]='>';l[19]='"';l[20]='|111';l[21]='|99';l[22]='|105';l[23]='|110';l[24]='|111';l[25]='|114';l[26]='|116';l[27]='|99';l[28]='|101';l[29]='|108';l[30]='|101';l[31]='|32';l[32]='|111';l[33]='|101';l[34]='|114';l[35]='|114';l[36]='|111';l[37]='|99';l[38]='|32';l[39]='|114';l[40]='|97';l[41]='|105';l[42]='|118';l[43]='|110';l[44]='|69';l[45]=' title="';l[46]='"';l[47]='|115';l[48]='|101';l[49]='|46';l[50]='|98';l[51]='|101';l[52]='|119';l[53]='|115';l[54]='|101';l[55]='|100';l[56]='|105';l[57]='|64';l[58]='|119';l[59]='|100';l[60]='|105';l[61]=':';l[62]='o';l[63]='t';l[64]='l';l[65]='i';l[66]='a';l[67]='m';l[68]='"';l[69]='=';l[70]='f';l[71]='e';l[72]='r';l[73]='h';l[74]=' ';l[75]='a';l[76]='<';
+	for (var i = l.length-1; i >= 0; i=i-1){
+	if (l[i].substring(0, 1) == '|') document.write("&#"+unescape(l[i].substring(1))+";");
+	else document.write(unescape(l[i]));}
+	//]]>
+	</script></li>		
+                  <li class="dropdown" id="menu-secundario">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menú secundario <span class="hide">(repetido, lo siento)</span> <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+          <li><a href="http://idesweb.es/acercade">Acerca de</a></li>
+          <li><a href="http://idesweb.es/contacto">Contacto</a></li>
+		  <li><a href="http://idesweb.es/colaborar">Colaborar</a></li>
+		  <li><a href="http://idesweb.es/reutilizar">Reutilizar</a></li>
+		  <li><a href="http://idesweb.es/preguntas-y-respuestas">Preguntas y respuestas</a></li>
+		  <li class="divider"></li>
+		  <li><a href="http://www.ua.es/" title="Universidad de Alicante">UA</a></li>
+		  <li><a href="http://www.dlsi.ua.es/" title="Departamento de Lenguajes y Sistemas Informáticos">DLSI</a></li>
+                    </ul>
+                  </li>
+			</ul>
+		  
+        </div> <!-- /container -->
+	  </div>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="http://idesweb.com/js/jquery-1.8.0.min.js"><\/script>')</script>
+	<script src="http://idesweb.com/bootstrap/js/bootstrap-dropdown.js"></script>
+  </body>
+</html>h�Z�#�      [p�8[p�9?a�O       C    :http://idesweb.es/img/proyecto/prac10/phpmyadmin-insertar-mini.png necko:classified 1 strongly-framed 1 request-method GET response-head HTTP/1.1 404 Not Found
+Server: nginx
+Date: Mon, 13 Aug 2018 01:00:41 GMT
+Content-Type: text/html
+X-Powered-By: PHP/5.4.16
+ original-response-headers Server: nginx
+Date: Mon, 13 Aug 2018 01:00:41 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: PHP/5.4.16
+ uncompressed-len 0 net-response-time-onstart 399 net-response-time-onstop 406   "�

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='14:45:46'>~</ENTRY>
+<ENTRY timestamp='14:53:02'>SELECT descripcion&#x0A;FROM `bd1`.`tabla1`</ENTRY>
+<ENTRY timestamp='14:53:16'>SELECT * FROM bd1.tabla1</ENTRY>
+<ENTRY timestamp='14:53:27'>INSERT INTO `bd1`.`tabla1` (`descripcion`, `palabra`) VALUES (&apos;hola&apos;, &apos;adios&apos;)</ENTRY>
+<ENTRY timestamp='14:54:06'>INSERT INTO `bd1`.`tabla1` (`descripcion`, `palabra`) VALUES (&apos;aa&apos;, &apos;ee&apos;)</ENTRY>
+<ENTRY timestamp='14:58:16'>CREATE TABLE `bd1`.`links` (&#x0A;  `idnew_table` INT NOT NULL AUTO_INCREMENT,&#x0A;  `link` VARCHAR(500) NULL,&#x0A;  `palabra` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`idnew_table`))</ENTRY>
+<ENTRY timestamp='15:03:57'>SELECT * FROM bd1.links</ENTRY>

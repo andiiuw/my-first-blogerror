@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ENTRY timestamp='19:31:14'>CREATE SCHEMA `bd1`</ENTRY>
+<ENTRY timestamp='19:32:25'>CREATE TABLE `bd1`.`tabla1` (&#x0A;  `idtabla1` INT NOT NULL AUTO_INCREMENT,&#x0A;  `descripcion` VARCHAR(500) NULL,&#x0A;  PRIMARY KEY (`idtabla1`))</ENTRY>
+<ENTRY timestamp='19:33:10'>SELECT * FROM bd1.tabla1</ENTRY>
+<ENTRY timestamp='19:33:50'>INSERT INTO `bd1`.`tabla1` (`idtabla1`, `descripcion`) VALUES (&apos;1&apos;, &apos;rojo&apos;)</ENTRY>
+<ENTRY timestamp='~'>INSERT INTO `bd1`.`tabla1` (`idtabla1`, `descripcion`) VALUES (&apos;2&apos;, &apos;azul&apos;)</ENTRY>
+<ENTRY timestamp='~'>INSERT INTO `bd1`.`tabla1` (`idtabla1`, `descripcion`) VALUES (&apos;3&apos;, &apos;verde&apos;)</ENTRY>
+<ENTRY timestamp='19:34:02'>INSERT INTO `bd1`.`tabla1` (`descripcion`) VALUES (&apos;amarillo&apos;)</ENTRY>
+<ENTRY timestamp='19:56:52'>SELECT * FROM bd1.tabla1</ENTRY>
+<ENTRY timestamp='20:07:24'>delete from tabla1</ENTRY>
+<ENTRY timestamp='20:07:28'>SELECT * FROM bd1.tabla1</ENTRY>
+<ENTRY timestamp='20:07:41'>~</ENTRY>
+<ENTRY timestamp='20:07:58'>delete * FROM bd1.tabla1</ENTRY>
+<ENTRY timestamp='20:08:18'>delete  FROM bd1.tabla1</ENTRY>
+<ENTRY timestamp='20:08:40'>DROP TABLE `bd1`.`tabla1`</ENTRY>
+<ENTRY timestamp='20:09:29'>CREATE TABLE `bd1`.`tabla1` (&#x0A;  `idtabla1` INT NOT NULL AUTO_INCREMENT,&#x0A;  `descripcion` VARCHAR(500) NULL,&#x0A;  `palabra` VARCHAR(45) NULL,&#x0A;  PRIMARY KEY (`idtabla1`))</ENTRY>
