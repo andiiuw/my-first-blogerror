@@ -426,3 +426,36 @@ Release Date: 2017-12-20
 [  1432.118] (II) event5  - VirtualBox USB Tablet: device is a pointer
 [  1967.016] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
 [  2723.359] (EE) client bug: timer event4 debounce: offset negative (-17ms)
+[  5837.374] (II) config/udev: removing device VirtualBox USB Tablet
+[  5837.910] (**) Option "fd" "47"
+[  5837.910] (II) event5  - VirtualBox USB Tablet: device removed
+[  5837.930] (II) UnloadModule: "libinput"
+[  5837.930] (II) systemd-logind: releasing fd for 13:69
+[  5837.931] (EE) systemd-logind: failed to release device: Device not taken
+[  5841.469] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/js0)
+[  5841.469] (II) No input driver specified, ignoring this device.
+[  5841.469] (II) This device may have been added with another device file.
+[  5841.475] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/mouse1)
+[  5841.475] (II) No input driver specified, ignoring this device.
+[  5841.475] (II) This device may have been added with another device file.
+[  5842.186] (II) config/udev: Adding input device VirtualBox USB Tablet (/dev/input/event5)
+[  5842.186] (**) VirtualBox USB Tablet: Applying InputClass "libinput pointer catchall"
+[  5842.186] (II) Using input driver 'libinput' for 'VirtualBox USB Tablet'
+[  5842.346] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 48 paused 0
+[  5842.347] (**) VirtualBox USB Tablet: always reports core events
+[  5842.347] (**) Option "Device" "/dev/input/event5"
+[  5842.347] (**) Option "_source" "server/udev"
+[  5842.347] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[  5842.347] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[  5842.347] (II) event5  - VirtualBox USB Tablet: device removed
+[  5842.347] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0003/input/input9/event5"
+[  5842.347] (II) XINPUT: Adding extended input device "VirtualBox USB Tablet" (type: MOUSE, id 10)
+[  5842.383] (**) Option "AccelerationScheme" "none"
+[  5842.392] (**) VirtualBox USB Tablet: (accel) selected scheme none/0
+[  5842.392] (**) VirtualBox USB Tablet: (accel) acceleration factor: 2.000
+[  5842.392] (**) VirtualBox USB Tablet: (accel) acceleration threshold: 4
+[  5842.395] (II) event5  - VirtualBox USB Tablet: is tagged by udev as: Mouse
+[  5842.395] (II) event5  - VirtualBox USB Tablet: device is a pointer
+[  5982.514] (II) event6  - VirtualBox mouse integration: SYN_DROPPED event - some input events have been lost.
+[  5983.448] (EE) client bug: timer event4 debounce: offset negative (-691ms)
+[  5984.760] (EE) client bug: timer event4 debounce: offset negative (-810ms)

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="firefox.desktop" open-window-count="1" score="1550.59375" last-seen="1535995071"/>
-    <application id="sublime-text_subl.desktop" open-window-count="0" score="5618.28125" last-seen="1534785972"/>
-    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="8.875" last-seen="1534283521"/>
-    <application id="update-manager.desktop" open-window-count="0" score="0.21875" last-seen="1535994408"/>
-    <application id="org.gnome.gedit.desktop" open-window-count="0" score="14.96875" last-seen="1534282193"/>
-    <application id="mysql-workbench.desktop" open-window-count="0" score="5.90625" last-seen="1534283737"/>
-    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="43246.625" last-seen="1535994801"/>
+    <application id="firefox.desktop" open-window-count="1" score="156.287109375" last-seen="1537201770"/>
+    <application id="sublime-text_subl.desktop" open-window-count="0" score="354.267578125" last-seen="1537201724"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="0" score="0.5546875" last-seen="1534283521"/>
+    <application id="update-manager.desktop" open-window-count="0" score="0.013671875" last-seen="1537201595"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="0" score="0.935546875" last-seen="1534282193"/>
+    <application id="mysql-workbench.desktop" open-window-count="0" score="0.369140625" last-seen="1534283737"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="2" score="24224.6640625" last-seen="1537201824"/>
   </context>
 </application-state>
